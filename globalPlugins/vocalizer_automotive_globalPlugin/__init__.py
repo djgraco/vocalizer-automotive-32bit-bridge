@@ -24,7 +24,9 @@ from .dialogs import VocalizerLanguageSettingsDialog, getInstalledVoiceLocaleMap
 
 
 BRIDGE_SYNTH_NAME = "vocalizerAutomotive32"
-VOICE_DOWNLOADS_URL = "https://tiflotecnia.net/downloads.htm"
+VOICE_DOWNLOADS_URL_TEMPLATE = (
+	"http://www.vocalizer-nvda.com/downloads_redirect.php?lang={lang}"
+)
 DRIVER_VERSION_FALLBACK = "2.1.7-2026.07.13"
 
 
@@ -268,7 +270,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			)
 
 	def onVoicesDownload(self, event):
-		webbrowser.open(VOICE_DOWNLOADS_URL)
+		webbrowser.open(
+			VOICE_DOWNLOADS_URL_TEMPLATE.format(
+				lang=languageHandler.getLanguage()
+			)
+		)
 
 	def onAbout(self, event):
 		message = _(
