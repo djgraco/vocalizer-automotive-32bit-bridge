@@ -11,14 +11,6 @@ NVDA's standard compatibility bridge.
 
 ## Important
 
-The package includes the bridge code and the Vocalizer runtime components
-required by the 32-bit Automotive host:
-
-- `vautov5.dll`
-- `nuan_platform.dll`
-- `nuan_platform.dllz`
-- the required component data and tuning files
-
 The package does **not** include separate Vocalizer voice add-ons or the
 user-specific `vocalizer_license.ini` file. A valid license is still required
 by the runtime and must be imported separately.
