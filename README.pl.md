@@ -11,14 +11,6 @@ syntezatora za pomocą standardowego mostu zgodności NVDA.
 
 ## Ważne
 
-Pakiet zawiera kod mostu oraz pliki runtime wymagane przez 32-bitowy host
-Automotive:
-
-- `vautov5.dll`
-- `nuan_platform.dll`
-- `nuan_platform.dllz`
-- wymagane dane komponentów i pliki strojenia
-
 Pakiet nie zawiera osobnych dodatków z głosami Vocalizer ani przypisanego do
 użytkownika pliku `vocalizer_license.ini`. Runtime nadal wymaga ważnej
 licencji, którą należy zaimportować osobno.
