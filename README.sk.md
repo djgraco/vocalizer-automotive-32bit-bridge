@@ -13,14 +13,6 @@ Klasický bridge pre 64-bitové NVDA je vo vydaní `v2.1.7`.
 
 ## Dôležité
 
-Balík obsahuje kód mosta a runtime súbory potrebné 32-bitovým hostiteľom
-Automotive:
-
-- `vautov5.dll`
-- `nuan_platform.dll`
-- `nuan_platform.dllz`
-- požadované údaje komponentov a súbory ladenia
-
 Balík neobsahuje samostatné hlasové doplnky Vocalizer ani používateľský súbor
 `vocalizer_license.ini`. Runtime stále vyžaduje platnú licenciu, ktorú treba
 importovať samostatne.
