@@ -11,14 +11,6 @@ NVDA ho most spúšťa vo vyhradenom 32-bitovom hostiteľovi syntetizátora pomo
 
 ## Dôležité
 
-Balík obsahuje kód mosta a runtime súbory potrebné 32-bitovým hostiteľom
-Automotive:
-
-- `vautov5.dll`
-- `nuan_platform.dll`
-- `nuan_platform.dllz`
-- požadované údaje komponentov a súbory ladenia
-
 Balík neobsahuje samostatné hlasové doplnky Vocalizer ani používateľský súbor
 `vocalizer_license.ini`. Runtime stále vyžaduje platnú licenciu, ktorú treba
 importovať samostatne.
