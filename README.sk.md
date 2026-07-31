@@ -21,8 +21,8 @@ ani podporu.
 
 ## Inštalácia
 
-1. Nainštalujte verejný súbor `.nvda-addon` zo stránky GitHub Releases alebo
-   skopírujte toto úložisko do priečinka doplnkov NVDA.
+1. Nainštalujte verejne dostupný súbor `.nvda-addon` zo stránky GitHub Releases alebo
+   skopírujte tento balík do priečinka doplnkov NVDA.
 2. Balík už obsahuje požadované runtime súbory Automotive.
 3. Samostatne nainštalujte vlastné doplnky s hlasmi Vocalizer Automotive.
    Ich priečinky sa zvyčajne začínajú na `vocalizer-voice-`.
@@ -46,7 +46,7 @@ Toto vydanie používa klasický most kompatibility NVDA v 64-bitovom NVDA. V
 nezávisle pomocou vlastného hooku WavePlayer.
 
 Toto vydanie nepoužíva cestu brokered audio NVDA. Ak potrebujete brokered audio
-a natívne stlmenie zvuku, použite `v2.2.0` v 64-bitovom NVDA 2026.2 alebo
+a natívne stíšenie zvuku, použite `v2.2.0` v 64-bitovom NVDA 2026.2 alebo
 novšom.
 
 ## Varianty vydaní
