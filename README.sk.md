@@ -24,8 +24,8 @@ nezodpovedá za tento fork ani za jeho podporu.
 
 ## Inštalácia
 
-1. Nainštalujte verejný súbor `.nvda-addon` zo stránky GitHub Releases alebo
-   skopírujte toto úložisko do priečinka doplnkov NVDA.
+1. Nainštalujte verejne dostupný súbor `.nvda-addon` zo stránky GitHub Releases alebo
+   skopírujte tento balík do priečinka doplnkov NVDA.
 2. Balík už obsahuje požadované runtime súbory Automotive.
 3. Samostatne nainštalujte vlastné doplnky s hlasmi Vocalizer Automotive.
    Ich priečinky sa zvyčajne začínajú na `vocalizer-voice-`.
@@ -49,8 +49,8 @@ NVDA na odovzdanie zvuku reči cez hlavný proces NVDA. V 32-bitovom NVDA
 pôvodný ovládač Automotive používa natívnu priamu cestu. Sonic Pitch zostáva
 kompatibilný s brokered audio cestou.
 
-Tento variant podporuje natívne stlmenie zvuku NVDA. Skratka
-`Shift+NVDA+D` prepína režimy stlmenia zvuku dostupné v NVDA. Vybraný režim
+Tento variant podporuje natívne stíšenie zvuku NVDA. Skratka
+`Shift+NVDA+D` prepína režimy stíšenia zvuku dostupné v NVDA. Vybraný režim
 spravuje a ukladá samotné NVDA na 64-bitovej brokered ceste. Klasický variant
 `v2.1.7` túto cestu brokered audio nepoužíva.
 
