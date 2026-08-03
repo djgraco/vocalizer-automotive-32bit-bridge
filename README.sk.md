@@ -15,7 +15,7 @@ Balík neobsahuje samostatné hlasové doplnky Vocalizer ani používateľský s
 `vocalizer_license.ini`. Runtime stále vyžaduje platnú licenciu, ktorú treba
 importovať samostatne.
 
-Tento fork je udržiavaný nezávisle. Pôvodný projekt Vocalizer Automotive 5.5 sa už oficiálne nevyvíja ani nepodporuje. Pôvodný autor doplnku nezodpovedá za tento nezávislý fork, zmeny v ňom ani technickú podporu.
+Tento fork je udržiavaný nezávisle. Problémy hláste v tomto úložisku a žiadosti o podporu neposielajte dodávateľom ani správcom pôvodných komponentov. Pôvodný projekt Vocalizer Automotive 5.5 sa už oficiálne nevyvíja ani nepodporuje. Pôvodný autor doplnku nezodpovedá za tento nezávislý fork, zmeny v ňom ani technickú podporu.
 
 ## Inštalácia
 
