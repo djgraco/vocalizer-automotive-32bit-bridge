@@ -15,9 +15,7 @@ Pakiet nie zawiera osobnych dodatków z głosami Vocalizer ani przypisanego do
 użytkownika pliku `vocalizer_license.ini`. Runtime nadal wymaga ważnej
 licencji, którą należy zaimportować osobno.
 
-Ten fork jest utrzymywany niezależnie. Oryginalny projekt Vocalizer Automotive
-5.5 jest abandonware, a autor oryginalnego dodatku nie ponosi odpowiedzialności
-za ten fork, jego modyfikacje ani pomoc techniczną.
+Oryginalny projekt Vocalizer Automotive 5.5 nie jest już oficjalnie rozwijany ani wspierany. Autor oryginalnego dodatku nie ponosi odpowiedzialności za ten niezależny fork, wprowadzone w nim modyfikacje ani pomoc techniczną.
 
 ## Instalacja
 
