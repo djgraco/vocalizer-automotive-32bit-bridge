@@ -12,7 +12,8 @@
 Automotive 5.5 do 32- i 64-bitowych wersji NVDA.</p>
 <p>W 32-bitowym NVDA oryginalny sterownik Automotive jest ładowany
 bezpośrednio. W 64-bitowym NVDA most uruchamia go w dedykowanym 32-bitowym
-hoście. NVDA 2026.2 i nowsze używa na ścieżce 64-bitowej brokered audio.</p>
+hoście syntezatora. Sposób przekazywania dźwięku mowy zależy od zainstalowanego
+wariantu: standardowego albo brokered audio.</p>
 
 
 <h2>Instalacja</h2>
@@ -28,21 +29,23 @@ aby wprowadzić licencję i skonfigurować automatyczne przełączanie języka.<
 z własnej licencjonowanej kopii.</p>
 
 <h2>Przetwarzanie dźwięku</h2>
-<p>W 64-bitowym NVDA 2026.2 i nowszych to wydanie używa usługi brokered audio
-NVDA do przekazywania dźwięku mowy przez główny proces NVDA. W 32-bitowym NVDA
-oryginalny sterownik Automotive korzysta z natywnej ścieżki bezpośredniej.
-Sonic Pitch pozostaje zgodny ze ścieżką brokered audio.</p>
+<p>W 64-bitowym NVDA 2026.2 i nowszych wariant brokered audio przekazuje
+dźwięk mowy przez główny proces NVDA. W 32-bitowym NVDA Automotive korzysta
+z natywnej ścieżki bezpośredniej. Sonic Pitch pozostaje zgodny ze ścieżką
+brokered audio.</p>
 <p>Ten wariant obsługuje natywne przyciszanie dźwięku NVDA. Skrót
-<code>Shift+NVDA+D</code> przełącza tryby przyciszania audio dostępne w NVDA.
-NVDA zarządza i zapisuje wybrany tryb na brokered ścieżce 64-bitowej. Klasyczny
-wariant <code>v2.1.7</code> nie korzysta z tej ścieżki brokered audio.</p>
+<code>Shift+NVDA+D</code> przełącza tryby przyciszania dźwięku dostępne
+w NVDA. Na 64-bitowej ścieżce brokered NVDA zarządza wybranym trybem i go
+zapisuje. Wariant standardowy nie korzysta z tej ścieżki.</p>
 
-<h2>Warianty wydań</h2>
+<h2>Dostępne warianty</h2>
 <ul>
-<li><code>v2.1.7</code>: klasyczny bridge dla 32-bitowego NVDA oraz
-64-bitowego NVDA 2026.1 i nowszych.</li>
-<li><code>v2.2.0</code>: bridge brokered audio dla 64-bitowego NVDA 2026.2
-i nowszych, z bezpośrednią ścieżką dla 32-bitowego NVDA.</li>
+<li><strong>Wariant standardowy:</strong> używa klasycznego mostu zgodności
+w 64-bitowym NVDA 2026.1 i nowszych oraz natywnej ścieżki bezpośredniej
+w 32-bitowym NVDA.</li>
+<li><strong>Wariant brokered audio:</strong> przekazuje dźwięk mowy przez
+główny proces NVDA w 64-bitowym NVDA 2026.2 i nowszych oraz używa natywnej
+ścieżki bezpośredniej w 32-bitowym NVDA.</li>
 </ul>
 <p>Instaluj tylko jeden wariant naraz.</p>
 
