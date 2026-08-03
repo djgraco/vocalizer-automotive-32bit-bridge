@@ -3,9 +3,7 @@
 This repository contains source code, the NVDA 64-bit bridge and the runtime
 components required by the legacy 32-bit Vocalizer Automotive driver.
 
-The original Vocalizer Automotive 5.5 project is abandonware. The original
-add-on author is not responsible for this fork, its modifications or its
-support.
+The original Vocalizer Automotive 5.5 project is no longer officially developed or supported. The original add-on author is not responsible for this independent fork, any modifications made to it, or technical support.
 
 This fork is maintained independently. Report issues concerning these
 modifications through this repository's issue tracker. Do not direct support
