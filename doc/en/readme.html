@@ -12,14 +12,11 @@
 driver for both 32-bit and 64-bit NVDA.</p>
 <p>On 32-bit NVDA, the original Automotive driver is loaded directly. On
 64-bit NVDA, the bridge runs it in NVDA's dedicated 32-bit synthesizer host.</p>
-<p>This fork is maintained independently. The original Vocalizer Automotive 5.5 project is no longer officially developed or supported. The original add-on author is not responsible for this independent fork, any modifications made to it, or technical support.</p>
-
 
 
 <h2>Installation</h2>
 <ol>
 <li>Install the add-on.</li>
-<li>The add-on already contains the required Automotive runtime components.</li>
 <li>Install your voice add-ons separately.</li>
 <li>Use <strong>NVDA menu &gt; Vocalizer Automotive</strong>
 to enter the license and configure automatic language switching.</li>
@@ -31,8 +28,7 @@ your own licensed copy.</p>
 
 <h2>Audio processing</h2>
 <p>This release uses the classic NVDA compatibility bridge on 64-bit NVDA. On
-32-bit NVDA, Automotive uses its native direct path. Sonic Pitch remains
-independent and uses its own WavePlayer hook.</p>
+32-bit NVDA, Automotive uses its native direct path. Sonic Pitch do not work in this version.</p>
 <p>This release does not use NVDA's brokered-audio path. Use
 <code>v2.2.0</code> on 64-bit NVDA 2026.2 or newer for brokered audio and
 native audio ducking.</p>
