@@ -15,9 +15,7 @@ The package does **not** include separate Vocalizer voice add-ons or the
 user-specific `vocalizer_license.ini` file. A valid license is still required
 by the runtime and must be imported separately.
 
-This fork is maintained independently. The original Vocalizer Automotive 5.5
-project is abandonware, and its original add-on author is not responsible for
-this fork, its modifications or its support.
+This fork is maintained independently. The original Vocalizer Automotive 5.5 project is no longer officially developed or supported. The original add-on author is not responsible for this independent fork, any modifications made to it, or technical support.
 
 ## Installation
 
