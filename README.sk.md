@@ -5,9 +5,10 @@
 Projekt upravuje starší 32-bitový ovládač Nuance Vocalizer Automotive 5.5
 tak, aby fungoval v 32-bitových aj 64-bitových verziách NVDA.
 
-V 32-bitovom NVDA sa pôvodný ovládač Automotive načíta priamo. V 64-bitovom
-NVDA ho most spúšťa vo vyhradenom 32-bitovom hostiteľovi syntetizátora pomocou
-štandardného mosta kompatibility NVDA.
+V 32-bitovom NVDA sa pôvodný ovládač Automotive načíta priamo. V
+64-bitovom NVDA ho most spúšťa vo vyhradenom 32-bitovom hostiteľovi
+syntetizátora. Spôsob odovzdávania zvuku reči závisí od nainštalovaného
+variantu: štandardného alebo brokered audio.
 
 ## Dôležité
 
@@ -39,21 +40,23 @@ Tento fork je udržiavaný nezávisle. Problémy hláste v tomto úložisku a ž
 
 ## Spracovanie zvuku
 
-Toto vydanie používa klasický most kompatibility NVDA v 64-bitovom NVDA. V
-32-bitovom NVDA Automotive používa natívnu priamu cestu. Sonic Pitch funguje
-nezávisle pomocou vlastného hooku WavePlayer.
+Štandardný variant používa klasický most kompatibility NVDA v 64-bitovom
+NVDA. V 32-bitovom NVDA používa Automotive natívnu priamu cestu. Sonic Pitch
+so štandardným variantom nefunguje.
 
-Toto vydanie nepoužíva cestu brokered audio NVDA. Ak potrebujete brokered audio
-a natívne stíšenie zvuku, použite `v2.2.0` v 64-bitovom NVDA 2026.2 alebo
-novšom.
+Ak chcete odovzdávať zvuk cez hlavný proces NVDA a používať natívne
+stíšenie zvuku NVDA a kompatibilitu so Sonic Pitch v podporovaných
+64-bitových verziách NVDA, nainštalujte variant brokered audio.
 
-## Varianty vydaní
+## Dostupné varianty
 
-- `v2.1.7`: klasický most pre 32-bitové NVDA a 64-bitové NVDA 2026.1 a novšie.
-- `v2.2.0`: most brokered audio pre 64-bitové NVDA 2026.2 a novšie s priamou
-  cestou pre 32-bitové NVDA.
+- **Štandardný variant:** používa klasický most kompatibility v 64-bitovom
+  NVDA 2026.1 a novšom a natívnu priamu cestu v 32-bitovom NVDA.
+- **Variant brokered audio:** odovzdáva zvuk reči cez hlavný proces NVDA
+  v 64-bitovom NVDA 2026.2 a novšom a používa natívnu priamu cestu
+  v 32-bitovom NVDA.
 
-Inštalujte naraz iba jeden variant doplnku.
+Naraz inštalujte iba jeden variant.
 
 ## Automatické prepínanie jazyka
 
@@ -96,6 +99,6 @@ dostupná v angličtine, poľštine a slovenčine.
 ## Licencia
 
 Zdrojový kód ovládača NVDA a mosta je distribuovaný pod licenciou GPL-2.0
-podľa súborov [LICENSE](LICENSE) a [gpl.txt](gpl.txt). Priložené runtime
-súbory sú samostatné runtime súbory priložené k tomuto forku. Hlasové doplnky
-a používateľské licenčné súbory nie sú súčasťou balíka.
+podľa súboru [gpl.txt](gpl.txt). Priložené runtime súbory sú samostatné runtime
+súbory priložené k tomuto forku. Hlasové doplnky a používateľské licenčné
+súbory nie sú súčasťou balíka.
