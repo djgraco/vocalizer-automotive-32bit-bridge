@@ -5,12 +5,10 @@
 Projekt dostosowuje starszy, 32-bitowy sterownik Nuance Vocalizer Automotive
 5.5 do 32- i 64-bitowych wersji NVDA.
 
-W 32-bitowym NVDA oryginalny sterownik Automotive jest ładowany bezpośrednio.
-W 64-bitowym NVDA most uruchamia go w dedykowanym 32-bitowym hoście
-syntezatora.
-
-W 64-bitowym NVDA 2026.2 i nowszych ta gałąź używa ścieżki brokered audio
-NVDA. Klasyczny bridge dla 64-bitowego NVDA znajduje się w wydaniu `v2.1.7`.
+W 32-bitowym NVDA oryginalny sterownik Automotive jest ładowany
+bezpośrednio. W 64-bitowym NVDA most uruchamia go w dedykowanym 32-bitowym
+hoście syntezatora. Sposób przekazywania dźwięku mowy zależy od zainstalowanego
+wariantu: standardowego albo brokered audio.
 
 ## Ważne
 
@@ -44,24 +42,26 @@ Oryginalny projekt Vocalizer Automotive 5.5 nie jest już oficjalnie rozwijany a
 
 ## Przetwarzanie dźwięku
 
-W 64-bitowym NVDA 2026.2 i nowszych wydanie używa usługi brokered audio NVDA,
-aby przekazywać dźwięk mowy przez główny proces NVDA. W 32-bitowym NVDA
-oryginalny sterownik Automotive korzysta z natywnej ścieżki bezpośredniej.
-Sonic Pitch pozostaje zgodny ze ścieżką brokered audio.
+W 64-bitowym NVDA 2026.2 i nowszych wariant brokered audio przekazuje
+dźwięk mowy przez główny proces NVDA. W 32-bitowym NVDA Automotive korzysta
+z natywnej ścieżki bezpośredniej. Sonic Pitch pozostaje zgodny ze ścieżką
+brokered audio.
 
 Ten wariant obsługuje natywne przyciszanie dźwięku NVDA. Skrót
-`Shift+NVDA+D` przełącza tryby przyciszania audio dostępne w NVDA. Wybrany tryb
-jest zarządzany i zapisywany przez NVDA na brokered ścieżce 64-bitowej.
-Klasyczny wariant `v2.1.7` nie korzysta z tej ścieżki brokered audio.
+`Shift+NVDA+D` przełącza tryby przyciszania dźwięku dostępne w NVDA.
+Na 64-bitowej ścieżce brokered NVDA zarządza wybranym trybem i go zapisuje.
+Wariant standardowy nie korzysta z tej ścieżki.
 
-## Warianty wydań
+## Dostępne warianty
 
-- `v2.1.7`: klasyczny bridge dla 32-bitowego NVDA oraz 64-bitowego NVDA
-  2026.1 i nowszych.
-- `v2.2.0`: bridge brokered audio dla 64-bitowego NVDA 2026.2 i nowszych,
-  z bezpośrednią ścieżką dla 32-bitowego NVDA.
+- **Wariant standardowy:** używa klasycznego mostu zgodności w 64-bitowym
+  NVDA 2026.1 i nowszych oraz natywnej ścieżki bezpośredniej w 32-bitowym
+  NVDA.
+- **Wariant brokered audio:** przekazuje dźwięk mowy przez główny proces NVDA
+  w 64-bitowym NVDA 2026.2 i nowszych oraz używa natywnej ścieżki bezpośredniej
+  w 32-bitowym NVDA.
 
-Instaluj tylko jeden wariant dodatku naraz.
+Instaluj tylko jeden wariant naraz.
 
 ## Automatyczne przełączanie języka
 
