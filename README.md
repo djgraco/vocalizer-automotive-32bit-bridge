@@ -5,9 +5,10 @@
 This project adapts the legacy 32-bit Nuance Vocalizer Automotive 5.5 NVDA
 driver for both 32-bit and 64-bit NVDA.
 
-On 32-bit NVDA, the original Automotive driver is loaded directly. On 64-bit
-NVDA, the bridge runs it in NVDA's dedicated 32-bit synthesizer host using
-NVDA's standard compatibility bridge.
+On 32-bit NVDA, the original Automotive driver is loaded directly. On
+64-bit NVDA, the bridge runs it in NVDA's dedicated 32-bit synthesizer host.
+The method used to route speech audio depends on the installed variant:
+standard or brokered audio.
 
 ## Important
 
@@ -39,21 +40,23 @@ This fork is maintained independently. Report issues through this repository and
 
 ## Audio Processing
 
-This release uses the classic NVDA compatibility bridge on 64-bit NVDA. On
-32-bit NVDA, Automotive uses its native direct path. Sonic Pitch remains
-independent and uses its own WavePlayer hook.
+The standard variant uses the classic NVDA compatibility bridge on 64-bit
+NVDA. On 32-bit NVDA, Automotive uses its native direct path. Sonic Pitch does
+not work with the standard variant.
 
-This release does not use NVDA's brokered-audio path. Use `v2.2.0` on
-64-bit NVDA 2026.2 or newer when brokered audio and native audio ducking are
-needed.
+For audio routed through the main NVDA process, native NVDA audio ducking and
+Sonic Pitch compatibility on supported 64-bit NVDA versions, install the
+brokered-audio variant.
 
-## Release Variants
+## Available Variants
 
-- `v2.1.7`: classic bridge for 32-bit NVDA and 64-bit NVDA 2026.1 and newer.
-- `v2.2.0`: brokered-audio bridge for 64-bit NVDA 2026.2 and newer, with a
-  direct 32-bit NVDA path.
+- **Standard variant:** uses the classic compatibility bridge on 64-bit NVDA
+  2026.1 and newer, and the native direct path on 32-bit NVDA.
+- **Brokered-audio variant:** routes speech audio through the main NVDA process
+  on 64-bit NVDA 2026.2 and newer, and uses the native direct path on 32-bit
+  NVDA.
 
-Install only one variant of the add-on at a time.
+Install only one variant at a time.
 
 ## Automatic Language Switching
 
