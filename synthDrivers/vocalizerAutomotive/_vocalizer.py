@@ -210,21 +210,31 @@ def initialize(indexCallback=None):
 	# and allocate PCM and mark buffers
 	pcmBuf = (c_byte * pcmBufLen)()
 	markBuf = (VAUTO_MARKINFO * markBufSize)()
-	# Create a wave player
-	#sampleRate = sampleRateConversions[getParameter(VAUTO_PARAM_FREQUENCY)]
+	# Create a wave player.
+	# sampleRate = sampleRateConversions[getParameter(VAUTO_PARAM_FREQUENCY)]
 	sampleRate = 22050
+
 	try:
-		outputDevice = config.conf["speech"].get("outputDevice", "default")
+		# Audio device configuration used by NVDA 2025.1 and later.
+		outputDevice = config.conf["audio"].get("outputDevice", "default")
 	except Exception:
-		# The bridge host may not have the full speech configuration loaded yet.
-		outputDevice = "default"
+		try:
+			# Legacy audio device configuration used by older NVDA versions.
+			outputDevice = config.conf["speech"].get("outputDevice", "default")
+		except Exception:
+			# The bridge host may not have the full audio configuration loaded.
+			outputDevice = "default"
+
+	log.info(
+		f"Vocalizer Automotive output device: {outputDevice!r}"
+	)
+
 	player = nvwave.WavePlayer(
 		channels=1,
 		samplesPerSec=sampleRate,
 		bitsPerSample=16,
 		outputDevice=outputDevice,
 	)
-
 
 def open(voice=None):
 	""" Opens and returns a TTS instance."""
