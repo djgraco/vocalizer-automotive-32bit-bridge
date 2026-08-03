@@ -10,8 +10,10 @@
 <h1>Ovládač Vocalizer Automotive 5.5</h1>
 <p>Tento doplnok upravuje starší 32-bitový ovládač Nuance Vocalizer
 Automotive 5.5 pre 32-bitové aj 64-bitové verzie NVDA.</p>
-<p>V 32-bitovom NVDA sa pôvodný ovládač Automotive načíta priamo. V 64-bitovom
-NVDA ho most spúšťa vo vyhradenom 32-bitovom hostiteľovi syntetizátora.</p>
+<p>V 32-bitovom NVDA sa pôvodný ovládač Automotive načíta priamo. V
+64-bitovom NVDA ho most spúšťa vo vyhradenom 32-bitovom hostiteľovi
+syntetizátora. Spôsob odovzdávania zvuku reči závisí od nainštalovaného
+variantu: štandardného alebo brokered audio.</p>
 
 
 <h2>Inštalácia</h2>
@@ -27,20 +29,23 @@ NVDA alebo <code>vocalizerAutomotive32</code> v 64-bitovom NVDA.</li>
 licencovanej kópie.</p>
 
 <h2>Spracovanie zvuku</h2>
-<p>Toto vydanie používa klasický most kompatibility NVDA v 64-bitovom NVDA.
-V 32-bitovom NVDA Automotive používa natívnu priamu cestu. Sonic Pitch v tejto verzii nefunguje.</p>
-<p>Toto vydanie nepoužíva cestu brokered audio NVDA. Ak potrebujete brokered
-audio a natívne stíšenie zvuku, použite <code>v2.2.0</code> v 64-bitovom NVDA
-2026.2 alebo novšom.</p>
+<p>Štandardný variant používa klasický most kompatibility NVDA v 64-bitovom
+NVDA. V 32-bitovom NVDA používa Automotive natívnu priamu cestu. Sonic Pitch
+so štandardným variantom nefunguje.</p>
+<p>Ak chcete odovzdávať zvuk cez hlavný proces NVDA a používať natívne
+stíšenie zvuku NVDA a kompatibilitu so Sonic Pitch v podporovaných
+64-bitových verziách NVDA, nainštalujte variant brokered audio.</p>
 
-<h2>Varianty vydaní</h2>
+<h2>Dostupné varianty</h2>
 <ul>
-<li><code>v2.1.7</code>: klasický most pre 32-bitové NVDA a 64-bitové NVDA
-2026.1 a novšie.</li>
-<li><code>v2.2.0</code>: most brokered audio pre 64-bitové NVDA 2026.2 a
-novšie s priamou cestou pre 32-bitové NVDA.</li>
+<li><strong>Štandardný variant:</strong> používa klasický most kompatibility
+v 64-bitovom NVDA 2026.1 a novšom a natívnu priamu cestu v 32-bitovom
+NVDA.</li>
+<li><strong>Variant brokered audio:</strong> odovzdáva zvuk reči cez hlavný
+proces NVDA v 64-bitovom NVDA 2026.2 a novšom a používa natívnu priamu cestu
+v 32-bitovom NVDA.</li>
 </ul>
-<p>Inštalujte naraz iba jeden variant.</p>
+<p>Naraz inštalujte iba jeden variant.</p>
 
 <h2>Automatické prepínanie jazyka</h2>
 <p>Dialóg nastavení vyhľadá nainštalované hlasy podľa ich metadát
