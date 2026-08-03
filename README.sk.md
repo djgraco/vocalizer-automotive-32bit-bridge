@@ -19,8 +19,7 @@ importovať samostatne.
 
 Tento fork je udržiavaný nezávisle. Problémy hláste v tomto úložisku a žiadosti
 o podporu neposielajte dodávateľom ani správcom pôvodných komponentov.
-Pôvodný projekt Vocalizer Automotive 5.5 je abandonware a pôvodný autor doplnku
-nezodpovedá za tento fork ani za jeho podporu.
+Pôvodný projekt Vocalizer Automotive 5.5 sa už oficiálne nevyvíja ani nepodporuje. Pôvodný autor doplnku nezodpovedá za tento nezávislý fork, zmeny v ňom ani technickú podporu.
 
 ## Inštalácia
 
