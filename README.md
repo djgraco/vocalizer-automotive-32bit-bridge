@@ -100,6 +100,6 @@ repository. The build always excludes `vocalizer_license.ini`.
 ## License
 
 The NVDA driver and bridge source is distributed under GPL-2.0 as described
-in [LICENSE](LICENSE) and [gpl.txt](gpl.txt). The included runtime components
+in [gpl.txt](gpl.txt). The included runtime components
 are separate runtime files included with this fork. Voice add-ons and
 user-specific license files are not included.
