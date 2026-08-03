@@ -5,11 +5,10 @@
 Projekt upravuje starší 32-bitový ovládač Nuance Vocalizer Automotive 5.5
 tak, aby fungoval v 32-bitových aj 64-bitových verziách NVDA.
 
-V 32-bitovom NVDA sa pôvodný ovládač Automotive načíta priamo. V 64-bitovom
-NVDA ho most spúšťa vo vyhradenom 32-bitovom hostiteľovi syntetizátora.
-
-V 64-bitovom NVDA 2026.2 a novšom táto vetva používa brokered audio NVDA.
-Klasický bridge pre 64-bitové NVDA je vo vydaní `v2.1.7`.
+V 32-bitovom NVDA sa pôvodný ovládač Automotive načíta priamo. V
+64-bitovom NVDA ho most spúšťa vo vyhradenom 32-bitovom hostiteľovi
+syntetizátora. Spôsob odovzdávania zvuku reči závisí od nainštalovaného
+variantu: štandardného alebo brokered audio.
 
 ## Dôležité
 
@@ -43,23 +42,24 @@ Pôvodný projekt Vocalizer Automotive 5.5 sa už oficiálne nevyvíja ani nepod
 
 ## Spracovanie zvuku
 
-V 64-bitovom NVDA 2026.2 a novšom toto vydanie používa službu brokered audio
-NVDA na odovzdanie zvuku reči cez hlavný proces NVDA. V 32-bitovom NVDA
-pôvodný ovládač Automotive používa natívnu priamu cestu. Sonic Pitch zostáva
-kompatibilný s brokered audio cestou.
+V 64-bitovom NVDA 2026.2 a novšom variant brokered audio odovzdáva zvuk
+reči cez hlavný proces NVDA. V 32-bitovom NVDA používa Automotive natívnu
+priamu cestu. Sonic Pitch zostáva kompatibilný s cestou brokered audio.
 
 Tento variant podporuje natívne stíšenie zvuku NVDA. Skratka
-`Shift+NVDA+D` prepína režimy stíšenia zvuku dostupné v NVDA. Vybraný režim
-spravuje a ukladá samotné NVDA na 64-bitovej brokered ceste. Klasický variant
-`v2.1.7` túto cestu brokered audio nepoužíva.
+`Shift+NVDA+D` prepína režimy stíšenia zvuku dostupné v NVDA.
+Na 64-bitovej brokered ceste spravuje a ukladá vybraný režim NVDA.
+Štandardný variant túto cestu nepoužíva.
 
-## Varianty vydaní
+## Dostupné varianty
 
-- `v2.1.7`: klasický most pre 32-bitové NVDA a 64-bitové NVDA 2026.1 a novšie.
-- `v2.2.0`: most brokered audio pre 64-bitové NVDA 2026.2 a novšie s priamou
-  cestou pre 32-bitové NVDA.
+- **Štandardný variant:** používa klasický most kompatibility v 64-bitovom
+  NVDA 2026.1 a novšom a natívnu priamu cestu v 32-bitovom NVDA.
+- **Variant brokered audio:** odovzdáva zvuk reči cez hlavný proces NVDA
+  v 64-bitovom NVDA 2026.2 a novšom a používa natívnu priamu cestu
+  v 32-bitovom NVDA.
 
-Inštalujte naraz iba jeden variant doplnku.
+Naraz inštalujte iba jeden variant.
 
 ## Automatické prepínanie jazyka
 
@@ -102,6 +102,6 @@ dostupná v angličtine, poľštine a slovenčine.
 ## Licencia
 
 Zdrojový kód ovládača NVDA a mosta je distribuovaný pod licenciou GPL-2.0
-podľa súborov [LICENSE](LICENSE) a [gpl.txt](gpl.txt). Priložené runtime
-súbory sú samostatné runtime súbory priložené k tomuto forku. Hlasové doplnky
-a používateľské licenčné súbory nie sú súčasťou balíka.
+podľa súboru [gpl.txt](gpl.txt). Priložené runtime súbory sú samostatné runtime
+súbory priložené k tomuto forku. Hlasové doplnky a používateľské licenčné
+súbory nie sú súčasťou balíka.
