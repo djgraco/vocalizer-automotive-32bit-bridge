@@ -5,9 +5,10 @@
 Projekt dostosowuje starszy, 32-bitowy sterownik Nuance Vocalizer Automotive
 5.5 do 32- i 64-bitowych wersji NVDA.
 
-W 32-bitowym NVDA oryginalny sterownik Automotive jest ładowany bezpośrednio.
-W 64-bitowym NVDA most uruchamia go w dedykowanym 32-bitowym hoście
-syntezatora za pomocą standardowego mostu zgodności NVDA.
+W 32-bitowym NVDA oryginalny sterownik Automotive jest ładowany
+bezpośrednio. W 64-bitowym NVDA most uruchamia go w dedykowanym 32-bitowym
+hoście syntezatora. Sposób przekazywania dźwięku mowy zależy od zainstalowanego
+wariantu: standardowego albo brokered audio.
 
 ## Ważne
 
@@ -39,22 +40,24 @@ Ten fork jest utrzymywany niezależnie. Zgłaszaj problemy w tym repozytorium i 
 
 ## Przetwarzanie dźwięku
 
-To wydanie używa klasycznego mostu zgodności NVDA w 64-bitowym NVDA. W
-32-bitowym NVDA Automotive korzysta z natywnej ścieżki bezpośredniej. Sonic
-Pitch działa niezależnie przez własny hook WavePlayer.
+Wariant standardowy używa klasycznego mostu zgodności NVDA w 64-bitowym
+NVDA. W 32-bitowym NVDA Automotive korzysta z natywnej ścieżki bezpośredniej.
+Sonic Pitch nie działa z wariantem standardowym.
 
-To wydanie nie korzysta ze ścieżki brokered audio NVDA. Użyj `v2.2.0` na
-64-bitowym NVDA 2026.2 lub nowszym, jeśli potrzebujesz brokered audio i
-natywnego przyciszania dźwięku.
+Aby przekazywać dźwięk przez główny proces NVDA oraz korzystać z natywnego
+przyciszania dźwięku NVDA i zgodności z Sonic Pitch w obsługiwanych
+64-bitowych wersjach NVDA, zainstaluj wariant brokered audio.
 
-## Warianty wydań
+## Dostępne warianty
 
-- `v2.1.7`: klasyczny bridge dla 32-bitowego NVDA oraz 64-bitowego NVDA
-  2026.1 i nowszych.
-- `v2.2.0`: bridge brokered audio dla 64-bitowego NVDA 2026.2 i nowszych,
-  z bezpośrednią ścieżką dla 32-bitowego NVDA.
+- **Wariant standardowy:** używa klasycznego mostu zgodności w 64-bitowym
+  NVDA 2026.1 i nowszych oraz natywnej ścieżki bezpośredniej w 32-bitowym
+  NVDA.
+- **Wariant brokered audio:** przekazuje dźwięk mowy przez główny proces NVDA
+  w 64-bitowym NVDA 2026.2 i nowszych oraz używa natywnej ścieżki bezpośredniej
+  w 32-bitowym NVDA.
 
-Instaluj tylko jeden wariant dodatku naraz.
+Instaluj tylko jeden wariant naraz.
 
 ## Automatyczne przełączanie języka
 
@@ -97,6 +100,6 @@ angielsku, polsku i słowacku.
 ## Licencja
 
 Kod sterownika NVDA i mostu jest udostępniany na licencji GPL-2.0, zgodnie
-z plikami [LICENSE](LICENSE) i [gpl.txt](gpl.txt). Dołączone pliki runtime są
+z plikiem [[gpl.txt](gpl.txt). Dołączone pliki runtime są
 osobnymi plikami runtime dołączonymi do tego fork’a. Dodatki z głosami i
 przypisane do użytkownika pliki licencji nie są dołączane.
