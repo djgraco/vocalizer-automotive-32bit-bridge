@@ -104,6 +104,6 @@ angielsku, polsku i słowacku.
 ## Licencja
 
 Kod sterownika NVDA i mostu jest udostępniany na licencji GPL-2.0, zgodnie
-z plikami [LICENSE](LICENSE) i [gpl.txt](gpl.txt). Dołączone pliki runtime są
+z plikiem [gpl.txt](gpl.txt). Dołączone pliki runtime są
 osobnymi plikami runtime dołączonymi do tego fork’a. Dodatki z głosami i
 przypisane do użytkownika pliki licencji nie są dołączane.
