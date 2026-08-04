@@ -129,3 +129,21 @@ msgstr "地域と言語："
 
 msgid "Voice Name:"
 msgstr "話者："
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
+msgid ""
+"You have no Vocalizer voices installed.\n"
+"You need at least one voice installed to use Vocalizer for NVDA.\n"
+"You can download all Vocalizer voices from the product web page.\n"
+"Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+"ボーカライザーの音声がインストールされていません。\n"
+"NVDA用ボーカライザーを使うためには最低ひとつの音声が必要です。\n"
+"この製品のWebページからボーカライザー用音声をダウンロードできます。\n"
+"ダウンロードのWebページを確認しますか？"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
+msgid "No voices installed."
+msgstr "音声がインストールされていません。"

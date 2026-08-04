@@ -129,3 +129,21 @@ msgstr "Nombre de Localización:"
 
 msgid "Voice Name:"
 msgstr "Nombre de la Voz:"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
+msgid ""
+"You have no Vocalizer voices installed.\n"
+"You need at least one voice installed to use Vocalizer for NVDA.\n"
+"You can download all Vocalizer voices from the product web page.\n"
+"Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+"No tienes voces de Vocalizer instaladas.\n"
+"Necesitas al menos una voz instalada para utilizar Vocalizer para NVDA.\n"
+"Puedes descargar todas las voces de Vocalizer desde la página Web del producto.\n"
+"¿Quieres abrir la página web de descarga de voces para vocalizer para NVDA ahora?"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
+msgid "No voices installed."
+msgstr "No hay voces instaladas."

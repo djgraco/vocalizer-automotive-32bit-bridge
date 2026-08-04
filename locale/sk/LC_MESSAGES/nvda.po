@@ -135,3 +135,21 @@ msgstr "Názov jazyka:"
 
 msgid "Voice Name:"
 msgstr "Názov hlasu:"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
+msgid ""
+"You have no Vocalizer voices installed.\n"
+"You need at least one voice installed to use Vocalizer for NVDA.\n"
+"You can download all Vocalizer voices from the product web page.\n"
+"Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+"Nemáte nainštalované žiadne hlasy Vocalizer.\n"
+"Na používanie Vocalizera pre NVDA potrebujete mať nainštalovaný aspoň jeden hlas.\n"
+"Všetky hlasy Vocalizer si môžete stiahnuť z webovej stránky produktu.\n"
+"Chcete teraz otvoriť stránku na stiahnutie hlasov Vocalizer pre NVDA?"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
+msgid "No voices installed."
+msgstr "Nie sú nainštalované žiadne hlasy."

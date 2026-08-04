@@ -105,12 +105,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.submenu_vocalizer = None
 		self.menuItem = None
 		self._terminating = False
+		self._noVoicesWarning = None
 		if globalVars.appArgs.secure:
 			return
 		try:
 			self.createMenu()
 		except Exception:
 			log.error("Unable to create Vocalizer Automotive menu.", exc_info=True)
+		try:
+			if not getInstalledVoiceLocaleMap():
+				self._noVoicesWarning = wx.CallLater(
+					2000,
+					self.onNoVoicesInstalled,
+				)
+		except Exception:
+			log.debugWarning("Unable to check for Automotive voices.", exc_info=True)
 
 	def createMenu(self):
 		self.submenu_vocalizer = wx.Menu()
@@ -197,6 +206,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		gui.mainFrame._popupSettingsDialog(VocalizerLanguageSettingsDialog)
 
+	def onNoVoicesInstalled(self):
+		self._noVoicesWarning = None
+		if self._terminating or getInstalledVoiceLocaleMap():
+			return
+		if (
+			gui.messageBox(
+				_(
+					"You have no Vocalizer voices installed.\n"
+					"You need at least one voice installed to use Vocalizer for NVDA.\n"
+					"You can download all Vocalizer voices from the product web page.\n"
+					"Would you want to open the vocalizer for NVDA voices download page now?"
+				),
+				_("No voices installed."),
+				wx.YES_NO | wx.ICON_WARNING,
+			)
+			== wx.YES
+		):
+			self._openVoicesDownload()
+
 	def onVocalizerLicenseMenu(self, event):
 		licensePath = getDefaultLicensePath()
 		fd = wx.FileDialog(
@@ -268,6 +296,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			)
 
 	def onVoicesDownload(self, event):
+		self._openVoicesDownload()
+
+	def _openVoicesDownload(self):
 		webbrowser.open(
 			VOICE_DOWNLOADS_URL_TEMPLATE.format(
 				lang=languageHandler.getLanguage()
@@ -296,4 +327,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# NVDA is tearing down the wx main frame here. Explicitly removing or
 		# destroying menus can interrupt shutdown and prevent a restart.
 		self._terminating = True
+		if self._noVoicesWarning is not None:
+			self._noVoicesWarning.Stop()
+			self._noVoicesWarning = None
 		super(GlobalPlugin, self).terminate()

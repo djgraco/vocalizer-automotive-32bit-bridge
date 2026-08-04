@@ -129,3 +129,21 @@ msgstr "Nyelv neve:"
 
 msgid "Voice Name:"
 msgstr "Hang neve:"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
+msgid ""
+"You have no Vocalizer voices installed.\n"
+"You need at least one voice installed to use Vocalizer for NVDA.\n"
+"You can download all Vocalizer voices from the product web page.\n"
+"Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+"Nem telepített még egy Vocalizer hangot sem.\n"
+"Legalább egy Vocalizer hangnak telepítve kell lennie ahhoz, hogy a beszédszintetizátort használni tudja.\n"
+"A beszédhangokata termék weboldaláról töltheti le.\n"
+"Szeretné megnyitni a Vocalizer for NVDA weboldalát?"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
+msgid "No voices installed."
+msgstr "Nincsenek új hangok telepítve."

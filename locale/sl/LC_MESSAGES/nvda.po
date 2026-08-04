@@ -129,3 +129,21 @@ msgstr "Lokalno Ime:"
 
 msgid "Voice Name:"
 msgstr "Ime glasu:"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
+msgid ""
+"You have no Vocalizer voices installed.\n"
+"You need at least one voice installed to use Vocalizer for NVDA.\n"
+"You can download all Vocalizer voices from the product web page.\n"
+"Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+"Nimate nameščenih glasov Vocalizer.\n"
+"Za uporabo programa Vocalizer za NVDA morate imeti nameščen vsaj en glas.\n"
+"Vse glasove Vocalizerja lahko prenesete s spletne strani izdelka.\n"
+"Želite zdaj odpreti stran za prenos glasov programa Vokalizator za NVDA?"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
+msgid "No voices installed."
+msgstr "Noben glas ni nameščen."
