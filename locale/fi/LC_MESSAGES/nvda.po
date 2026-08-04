@@ -129,3 +129,21 @@ msgstr "Kieli:"
 
 msgid "Voice Name:"
 msgstr "Puheääni:"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
+msgid ""
+"You have no Vocalizer voices installed.\n"
+"You need at least one voice installed to use Vocalizer for NVDA.\n"
+"You can download all Vocalizer voices from the product web page.\n"
+"Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+"Vocalizer-puheääniä ei ole asennettu.\n"
+"Tarvitset vähintään yhden puheäänen Vocalizer for NVDA:n käyttämiseen.\n"
+"Kaikki puheäänet ovat ladattavissa tämän tuotteen verkkosivulta.\n"
+"Haluatko avata Vocalizer for NVDA -puheäänten lataussivun nyt?"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
+msgid "No voices installed."
+msgstr "Puheääniä ei ole asennettu."

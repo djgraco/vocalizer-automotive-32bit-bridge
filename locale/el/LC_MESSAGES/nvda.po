@@ -129,3 +129,21 @@ msgstr "Όνομα Τοπικής Γλώσσας:"
 
 msgid "Voice Name:"
 msgstr "Όνομα Φωνής:"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
+msgid ""
+"You have no Vocalizer voices installed.\n"
+"You need at least one voice installed to use Vocalizer for NVDA.\n"
+"You can download all Vocalizer voices from the product web page.\n"
+"Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+"Δεν έχετε εγκατεστημένες φωνές του Vocalizer.\n"
+"Χρειάζεται να εγκαταστήσετε τουλάχιστον μία φωνή για να χρησιμοποιήσετε το Vocalizer για το NVDA.\n"
+"Μπορείτε να κατεβάσετε όλες τις φωνές του Vocalizer από την ιστοσελίδα του προϊόντος.\n"
+"Θέλετε να επισκεφτείτε την ιστοσελίδα μεταφόρτωσης φωνών του Vocalizer για το NVDA;"
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
+msgid "No voices installed."
+msgstr "Δεν υπάρχουν εγκατεστημένες φωνές."
