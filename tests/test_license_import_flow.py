@@ -81,6 +81,10 @@ class LicenseImportFlowTests(unittest.TestCase):
 		wx.ICON_INFORMATION = 4
 		wx.FD_OPEN = 8
 		wx.FD_FILE_MUST_EXIST = 16
+		wx.YES = 32
+		wx.NO = 64
+		wx.YES_NO = wx.YES | wx.NO
+		wx.ICON_QUESTION = 128
 
 		package = types.ModuleType(packageName)
 		package.__path__ = [str(SOURCE_PATH.parent)]
@@ -122,7 +126,9 @@ class LicenseImportFlowTests(unittest.TestCase):
 			previousBuiltinTranslation,
 		) = self._load_plugin()
 		try:
-			with tempfile.TemporaryDirectory() as tempDir:
+			with tempfile.TemporaryDirectory(
+				dir=SOURCE_PATH.parents[2] / "tests"
+			) as tempDir:
 				sourcePath = Path(tempDir) / "source.ini"
 				targetPath = Path(tempDir) / "vocalizer_license.ini"
 				sourcePath.write_text("[info]\nusername = Test\n", encoding="utf-8")
@@ -142,7 +148,7 @@ class LicenseImportFlowTests(unittest.TestCase):
 						dialogState["destroyed"] = True
 
 				wx.FileDialog = FileDialog
-				gui.messageBox = mock.Mock()
+				gui.messageBox = mock.Mock(side_effect=[wx.YES, None])
 				wx.CallAfter = mock.Mock()
 
 				plugin = module.GlobalPlugin.__new__(module.GlobalPlugin)
@@ -154,8 +160,46 @@ class LicenseImportFlowTests(unittest.TestCase):
 
 				self.assertEqual(targetPath.read_bytes(), sourcePath.read_bytes())
 				self.assertTrue(dialogState["destroyed"])
-				gui.messageBox.assert_called_once()
+				self.assertEqual(gui.messageBox.call_count, 2)
+				self.assertEqual(
+					gui.messageBox.call_args_list[0].args,
+					(
+						module.LICENSE_IMPORT_WARNING,
+						"Entering License Data:",
+						wx.YES_NO | wx.ICON_QUESTION,
+					),
+				)
 				wx.CallAfter.assert_called_once_with(plugin.reinitializeMenu)
+		finally:
+			for name in moduleNames:
+				oldModule = previousModules[name]
+				if oldModule is None:
+					sys.modules.pop(name, None)
+				else:
+					sys.modules[name] = oldModule
+			if previousBuiltinTranslation is None:
+				builtins.__dict__.pop("_", None)
+			else:
+				builtins._ = previousBuiltinTranslation
+
+	def test_declining_license_warning_does_not_open_file_dialog(self):
+		(
+			module,
+			wx,
+			gui,
+			previousModules,
+			moduleNames,
+			previousBuiltinTranslation,
+		) = self._load_plugin()
+		try:
+			wx.FileDialog = mock.Mock()
+			gui.messageBox = mock.Mock(return_value=wx.NO)
+
+			plugin = module.GlobalPlugin.__new__(module.GlobalPlugin)
+			plugin.onVocalizerLicenseMenu(object())
+
+			gui.messageBox.assert_called_once()
+			wx.FileDialog.assert_not_called()
 		finally:
 			for name in moduleNames:
 				oldModule = previousModules[name]

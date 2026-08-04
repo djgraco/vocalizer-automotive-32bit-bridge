@@ -40,6 +40,9 @@ try {
         if ($_.Name -eq "vocalizer_license.ini") {
             return
         }
+        if ($_.Name -like "nuan_platform.dll*" -and $_.Name -ne "nuan_platform.dll") {
+            return
+        }
         if ($_.Extension -in @(".md", ".ps1", ".gitignore", ".pot")) {
             return
         }
@@ -68,13 +71,13 @@ try {
     $names = @($package.Entries | ForEach-Object { $_.FullName })
     $forbidden = @(
         $names | Where-Object {
-            $_ -match "(^|/)(.*\.py[co]$|vocalizer_license\.ini$)"
+            $_ -match "(^|/)(.*\.py[co]$|vocalizer_license\.ini$)" -or
+            $_ -match "(^|/)nuan_platform\.dll.+$"
         }
     )
     $requiredRuntime = @(
         "synthDrivers/vocalizerAutomotive/common/speech/components/lid.dat",
         "synthDrivers/vocalizerAutomotive/common/speech/components/nuan_platform.dll",
-        "synthDrivers/vocalizerAutomotive/common/speech/components/nuan_platform.dllz",
         "synthDrivers/vocalizerAutomotive/common/speech/components/synth_med_fxd_bet2f22.dat",
         "synthDrivers/vocalizerAutomotive/common/speech/components/vautov5.dll"
     )
