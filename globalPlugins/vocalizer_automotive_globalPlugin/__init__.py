@@ -218,7 +218,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.menuItem = self.menu.Insert(
 			2,
 			wx.ID_ANY,
-			_("VocalizerAutomotive"),
+			_("Vocalizer Automotive"),
 			self.submenu_vocalizer,
 			_("Vocalizer Automotive management options"),
 		)

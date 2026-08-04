@@ -239,10 +239,6 @@ msgstr ""
 msgid "Vocalizer Automotive management options"
 msgstr ""
 
-#, fuzzy
-msgid "VocalizerAutomotive"
-msgstr "Vocalizer"
-
 msgid "Voice Name:"
 msgstr "Nombre d'a Voz:"
 

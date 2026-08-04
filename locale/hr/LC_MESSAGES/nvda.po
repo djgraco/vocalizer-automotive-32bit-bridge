@@ -241,9 +241,6 @@ msgstr ""
 msgid "Vocalizer Automotive management options"
 msgstr ""
 
-msgid "VocalizerAutomotive"
-msgstr "VocalizerAutomotive"
-
 msgid "Voice Name:"
 msgstr "Ime glasa:"
 

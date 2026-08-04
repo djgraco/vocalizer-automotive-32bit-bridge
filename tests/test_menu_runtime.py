@@ -156,6 +156,7 @@ class MenuRuntimeTests(unittest.TestCase):
 			plugin.createMenu()
 			oldMenu = plugin.submenu_vocalizer
 			oldItem = plugin.menuItem
+			self.assertEqual(oldItem[2][1], "Vocalizer Automotive")
 			plugin.reinitializeMenu()
 
 			self.assertEqual(sysTrayIcon.menu.removed, [oldItem])

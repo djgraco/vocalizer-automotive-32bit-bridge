@@ -251,9 +251,6 @@ msgstr "Vocalizer Automotive"
 msgid "Vocalizer Automotive management options"
 msgstr "Opcje zarządzania Vocalizer Automotive"
 
-msgid "VocalizerAutomotive"
-msgstr "VocalizerAutomotive"
-
 msgid "Voice Name:"
 msgstr "Nazwa głosu:"
 
