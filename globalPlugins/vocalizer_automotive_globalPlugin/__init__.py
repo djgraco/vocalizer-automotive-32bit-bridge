@@ -24,8 +24,59 @@ from .dialogs import VocalizerLanguageSettingsDialog, getInstalledVoiceLocaleMap
 
 
 BRIDGE_SYNTH_NAME = "vocalizerAutomotive32"
+URL = "http://vocalizer-nvda.com"
 VOICE_DOWNLOADS_URL_TEMPLATE = (
 	"http://www.vocalizer-nvda.com/downloads_redirect.php?lang={lang}"
+)
+CONTRIBUTORS = "NV Access ltd, Ângelo Abrantes, Diogo Costa, Mesar Hameed, Babbage B.V.."
+
+ABOUT_MESSAGE = _("""
+ URL: {url}
+\x20
+This product is composed of two independent components:
+- Nuance Vocalizer speech synthesizer.
+- NVDA speech driver and interface for Nuance Vocalizer.
+Licenses and conditions for these components are as follows:
+
+Nuance Vocalizer speech synthesizer:
+
+Copyright (C) 2011 Nuance Communications, Inc. All rights reserved.
+
+Synthesizer Version: {synthVersion}
+This copy of the Nuance Vocalizer synthesizer is licensed to be used exclusively with the NVDA screen reader (Non Visual Desktop Access).
+
+License information:
+{licenseInfo}
+
+License management components are property of Tiflotecnia, LDA.
+Copyright (C) 2012 Tiflotecnia, LDA. All rights reserved.
+
+
+NVDA speech driver and interface for Nuance Vocalizer:
+
+Copyright (C) 2012 Tiflotecnia, LDA.
+Copyright (C) 2012 Rui Batista.
+Copyright (C) 2019 Babbage B.V.
+
+ Version: {driverVersion}
+\x20
+ NVDA speech driver and interface for Nuance Vocalizer is covered by the GNU General Public License (Version 2). You are free to share or change this software in any way you like as long as it is accompanied by the license and you make all source code available to anyone who wants it. This applies to both original and modified copies of this software, plus any derivative works.
+For further details, you can view the license from the NVDA Help menu.
+It can also be viewed online at: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+This component was developed by Tiflotecnia, LDA and Rui Batista, with contributions from many others. Special thanks goes to:
+{contributors}
+""")
+
+LICENSE_IMPORT_WARNING = _(
+	"Use your own Vocalizer license file. The selected file will be copied "
+	"to your NVDA configuration.\n\n"
+	"The Automotive engine will check the license after NVDA is restarted. "
+	"Due to limitations of communication between 64-bit NVDA and the 32-bit "
+	"host, a detailed reason for rejecting the license may not be displayed. "
+	"If the engine rejects the license, the synthesizer may simply fail to "
+	"load.\n\n"
+	"Do you want to continue?"
 )
 
 
@@ -68,7 +119,7 @@ def _getDriverVersion():
 def _getLicenseSummary():
 	licenseInfo = getLicenseInfo()
 	if licenseInfo == "none":
-		return _("No license file found.")
+		return _("No License.")
 	if licenseInfo == "invalid":
 		return _("The license file exists but could not be read.")
 
@@ -87,7 +138,9 @@ def _getLicenseSummary():
 				_("License Number: ") + info.get("licenseid", ""),
 				_("Distributor: ") + info.get("distributor", ""),
 				_(
-					"License validation is performed by the 32-bit Automotive host."
+					"License validity is checked by the 32-bit Automotive host. "
+					"Detailed license errors are not available through the current "
+					"64/32-bit bridge."
 				),
 			)
 		)
@@ -129,31 +182,30 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		item = self.submenu_vocalizer.Append(
 			wx.ID_ANY,
 			_("Automatic &Language Switching Settings"),
-			_("Configure which voice is used for each language."),
+			_("Configure which voice is to be used for each language."),
 		)
 		sysTrayIcon.Bind(wx.EVT_MENU, self.onLanguageSettings, item)
 
-		if getLicenseInfo() in ("licensed", "invalid") or os.path.isfile(
-			getDefaultLicensePath()
-		):
+		licenseInfo = getLicenseInfo()
+		if licenseInfo.startswith("licensed:") or licenseInfo == "invalid":
 			item = self.submenu_vocalizer.Append(
 				wx.ID_ANY,
 				_("Remove License"),
-				_("Remove the Automotive license from this NVDA copy."),
+				_("Remove your license from this NVDA copy"),
 			)
 			sysTrayIcon.Bind(wx.EVT_MENU, self.onVocalizerLicenseRemoveMenu, item)
 		else:
 			item = self.submenu_vocalizer.Append(
 				wx.ID_ANY,
 				_("Enter License"),
-				_("Enter your Automotive license data for this computer."),
+				_("Enter your license data for this computer."),
 			)
 			sysTrayIcon.Bind(wx.EVT_MENU, self.onVocalizerLicenseMenu, item)
 
 		item = self.submenu_vocalizer.Append(
 			wx.ID_ANY,
 			_("Download More Voices"),
-			_("Open the Vocalizer voices download page."),
+			_("Open the vocalizer voices download page."),
 		)
 		sysTrayIcon.Bind(wx.EVT_MENU, self.onVoicesDownload, item)
 
@@ -166,7 +218,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.menuItem = self.menu.Insert(
 			2,
 			wx.ID_ANY,
-			_("Vocalizer Automotive"),
+			_("VocalizerAutomotive"),
 			self.submenu_vocalizer,
 			_("Vocalizer Automotive management options"),
 		)
@@ -226,11 +278,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._openVoicesDownload()
 
 	def onVocalizerLicenseMenu(self, event):
+		if (
+			gui.messageBox(
+				LICENSE_IMPORT_WARNING,
+				_("Entering License Data:"),
+				wx.YES_NO | wx.ICON_QUESTION,
+			)
+			!= wx.YES
+		):
+			return
+
 		licensePath = getDefaultLicensePath()
 		fd = wx.FileDialog(
 			gui.mainFrame,
-			message=_("Choose your Vocalizer license file"),
-			wildcard=_("License files (*.ini)|*.ini|All files (*.*)|*.*"),
+			message=_("Choose license file"),
+			wildcard=_("Nuance Vocalizer license files") + "|license*.ini",
 			defaultDir=os.path.dirname(licensePath),
 			style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST,
 		)
@@ -267,10 +329,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("Error"),
 				wx.OK | wx.ICON_ERROR,
 			)
+
 	def onVocalizerLicenseRemoveMenu(self, event):
 		if (
 			gui.messageBox(
-				_("Are you sure you want to remove your Automotive license?"),
+				_(
+					"Are you sure you want to remove your license?\n"
+					"This can not be reverted."
+				),
 				_("Remove License?"),
 				wx.YES_NO | wx.ICON_WARNING,
 			)
@@ -306,14 +372,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		)
 
 	def onAbout(self, event):
-		message = _(
-			"Nuance Vocalizer for NVDA\n\n"
-			"Automotive synthesizer version: 5.5\n"
-			"NVDA driver version: {driverVersion}\n\n"
-			"{licenseInfo}\n\n"
-			"The synthesizer runs in a dedicated 32-bit NVDA host so it can "
-			"work with 64-bit NVDA."
-		).format(
+		message = ABOUT_MESSAGE.format(
+			url=URL,
+			contributors=CONTRIBUTORS,
+			synthVersion="5.5",
 			driverVersion=_getDriverVersion(),
 			licenseInfo=_getLicenseSummary(),
 		)

@@ -1,10 +1,9 @@
 # Updated from the original Vocalizer Automotive translation for the current bridge.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Vocalizer Automotive 32-bit Bridge\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 00:00+0000\n"
+"POT-Creation-Date: 2026-08-04 20:21+0200\n"
 "PO-Revision-Date: 2026-07-15 00:00+0000\n"
 "Last-Translator: Original Vocalizer translation\n"
 "Language-Team: nb_NO\n"
@@ -13,125 +12,238 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Vocalizer Automotive"
+#, python-brace-format
+msgid ""
+"\n"
+" URL: {url}\n"
+" \n"
+"This product is composed of two independent components:\n"
+"- Nuance Vocalizer speech synthesizer.\n"
+"- NVDA speech driver and interface for Nuance Vocalizer.\n"
+"Licenses and conditions for these components are as follows:\n"
+"\n"
+"Nuance Vocalizer speech synthesizer:\n"
+"\n"
+"Copyright (C) 2011 Nuance Communications, Inc. All rights reserved.\n"
+"\n"
+"Synthesizer Version: {synthVersion}\n"
+"This copy of the Nuance Vocalizer synthesizer is licensed to be used "
+"exclusively with the NVDA screen reader (Non Visual Desktop Access).\n"
+"\n"
+"License information:\n"
+"{licenseInfo}\n"
+"\n"
+"License management components are property of Tiflotecnia, LDA.\n"
+"Copyright (C) 2012 Tiflotecnia, LDA. All rights reserved.\n"
+"\n"
+"\n"
+"NVDA speech driver and interface for Nuance Vocalizer:\n"
+"\n"
+"Copyright (C) 2012 Tiflotecnia, LDA.\n"
+"Copyright (C) 2012 Rui Batista.\n"
+"Copyright (C) 2019 Babbage B.V.\n"
+"\n"
+" Version: {driverVersion}\n"
+" \n"
+" NVDA speech driver and interface for Nuance Vocalizer is covered by the GNU "
+"General Public License (Version 2). You are free to share or change this "
+"software in any way you like as long as it is accompanied by the license and "
+"you make all source code available to anyone who wants it. This applies to "
+"both original and modified copies of this software, plus any derivative "
+"works.\n"
+"For further details, you can view the license from the NVDA Help menu.\n"
+"It can also be viewed online at: http://www.gnu.org/licenses/old-licenses/"
+"gpl-2.0.html\n"
+"\n"
+"This component was developed by Tiflotecnia, LDA and Rui Batista, with "
+"contributions from many others. Special thanks goes to:\n"
+"{contributors}\n"
 msgstr ""
-
-msgid "No license file found."
-msgstr "Ingen Lisens."
-
-msgid "The license file exists but could not be read."
-msgstr ""
-
-msgid "License file found, but detailed information is unavailable."
-msgstr "Lisensdata ikke tilgjengelig"
-
-msgid "User Name: "
-msgstr "Brukernavn: "
-
-msgid "User Identification: "
-msgstr "Brukeridentifikasjon: "
-
-msgid "License Number: "
-msgstr "Lisensnumber: "
-
-msgid "Distributor: "
-msgstr "Distributør: "
-
-msgid "License validation is performed by the 32-bit Automotive host."
-msgstr ""
-
-msgid "Automatic &Language Switching Settings"
-msgstr "Automatisk &Språkbytteinnstillinger"
-
-msgid "Configure which voice is used for each language."
-msgstr "Konfigurer hvilke stemme som skal brukes til de forskjellige språk."
-
-msgid "Remove License"
-msgstr "Fjern Lisens"
-
-msgid "Remove the Automotive license from this NVDA copy."
-msgstr "Fjern lisensen fra denne NVDA kopien"
-
-msgid "Enter License"
-msgstr "Skriv inn Lisens"
-
-msgid "Enter your Automotive license data for this computer."
-msgstr "Skriv inn lisensdataen for denne datamaskinen."
-
-msgid "Download More Voices"
-msgstr "Last Ned Flere Stemmer"
-
-msgid "Open the Vocalizer voices download page."
-msgstr "Åpne vocalizer-stemme nedlastingside."
+"\n"
+" URL: {url}\n"
+" \n"
+"Dette produktet består av to komponenter:\n"
+"- Nuance Vocalizer talesyntese.\n"
+"- NVDA taledriver og grensesnitt for Nuance Vocalizer.\n"
+"Lisenser og vilkår for disse komponentene er som følger:\n"
+"\n"
+"Nuance Vocalizer speech synthesizer:\n"
+"\n"
+"Copyright (C) 2011 Nuance Communications, Inc. All rights reserved.\n"
+"\n"
+"Synthesizer-versjon: {synthVersion}\n"
+"Dette eksemplaret av Nuance Vocalizer synthesizer er lisensiert til bruk "
+"utelukkende med NVDA skjermleseren (Non Visual Desktop Access).\n"
+"\n"
+"Lisensinformasjon:\n"
+"{licenseInfo}\n"
+"\n"
+"Lisenshåndtering av komponenter tilhører Tiflotecnia, LDA.\n"
+"Copyright (C) 2012 Tiflotecnia, LDA. Alle rettigheter forbeholdes.\n"
+"\n"
+"\n"
+"NVDA speech driver and interface for Nuance Vocalizer:\n"
+"\n"
+"Copyright (C) 2012 Tiflotecnia, LDA.\n"
+"Copyright (C) 2012 Rui Batista.\n"
+"\n"
+" Versjon: {driverVersion}\n"
+" \n"
+"NVDA taledriver og grensesnitt for Nuance Vocalizer er dekket av GNU General "
+"Public License (versjon 2). Du står fritt til å dele eller endre denne "
+"programvaren etter eget ønske, såfremt denne lisensen er vedlagt og all "
+"kildekode gjøres tilgjengelig for dem som skulle ønske det. Dette gjelder "
+"både originale og modifiserte kopier av denne programvaren, samt eventuelle "
+"avlede verk.\n"
+"For flere detaljer, kan du lese lisensen under NVDA-hjelpemenyen.\n"
+"Den kan og leses på: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html "
+"(Engelsk)\n"
+"\n"
+"Denne komponenten ble utviklet av Tiflotecnia, LDA og Rui Batista, med "
+"bidrag fra mange andre. Spesiell takk går til:\n"
+"{contributors}\n"
 
 msgid "About Nuance Vocalizer for NVDA"
 msgstr "Om Nuance Vocalizer for NVDA"
 
-msgid "No Automotive voice resources were found."
-msgstr "Ingen stemmer installert"
-
-msgid "Choose your Vocalizer license file"
+msgid ""
+"Are you sure you want to remove your license?\n"
+"This can not be reverted."
 msgstr ""
+"Er du sikker på at du vil fjerne lisensen?\n"
+"Dette kan ikke tilbakestilles."
 
-msgid "License files (*.ini)|*.ini|All files (*.*)|*.*"
-msgstr ""
+msgid "Automatic &Language Switching Settings"
+msgstr "Automatisk &Språkbytteinnstillinger"
+
+msgid "Choose license file"
+msgstr "Velg lisensfil"
+
+msgid "Configure which voice is to be used for each language."
+msgstr "Konfigurer hvilke stemme som skal brukes til de forskjellige språk."
+
+msgid "Distributor: "
+msgstr "Distributør: "
+
+msgid "Download More Voices"
+msgstr "Last Ned Flere Stemmer"
+
+msgid "Enter License"
+msgstr "Skriv inn Lisens"
+
+msgid "Enter your license data for this computer."
+msgstr "Skriv inn lisensdataen for denne datamaskinen."
+
+msgid "Entering License Data:"
+msgstr "Skriver Lisensdata:"
+
+msgid "Error"
+msgstr "Feil"
+
+#, python-brace-format
+msgid "Error copying license data: {error}"
+msgstr "Feil ved kopiering av lisensdata: {error}"
+
+#, python-brace-format
+msgid "Error removing license: {error}"
+msgstr "Feil ved fjerning av lisens: {error}"
+
+msgid "License Number: "
+msgstr "Lisensnumber: "
 
 msgid ""
 "License entered successfully!\n"
 "Restart NVDA manually for the Automotive host to validate it."
 msgstr ""
 
-msgid "The license file was copied, but its data could not be read."
-msgstr ""
-
-msgid "Success!"
-msgstr "Vellykket!"
-
-msgid "Error copying license data: {error}"
-msgstr "Feil ved kopiering av lisensdata: {error}"
-
-msgid "Error"
-msgstr "Feil"
-
-msgid "Are you sure you want to remove your Automotive license?"
-msgstr ""
-"Er du sikker på at du vil fjerne lisensen?\n"
-"Dette kan ikke tilbakestilles."
-
-msgid "Remove License?"
-msgstr "Fjern lisens?"
+msgid "License file found, but detailed information is unavailable."
+msgstr "Lisensdata ikke tilgjengelig"
 
 msgid "License removed. Restart NVDA for the change to take effect."
 msgstr "Lisensen ble fjernet. Restart NVDA for at endringene skal tre i kraft."
 
-msgid "Error removing license: {error}"
-msgstr "Feil ved fjerning av lisens: {error}"
-
 msgid ""
-"Nuance Vocalizer for NVDA\n"
-"\n"
-"Automotive synthesizer version: 5.5\n"
-"NVDA driver version: {driverVersion}\n"
-"\n"
-"{licenseInfo}\n"
-"\n"
-"The synthesizer runs in a dedicated 32-bit NVDA host so it can work with 64-bit NVDA."
+"License validity is checked by the 32-bit Automotive host. Detailed license "
+"errors are not available through the current 64/32-bit bridge."
 msgstr ""
 
-msgid "Vocalizer Automatic Language Switching Settings"
-msgstr "Vocalizer Automatisk språkbytteinnstillinger"
+msgid "Locale Name:"
+msgstr "Språknavn:"
+
+msgid "No Automotive voice resources were found."
+msgstr "Ingen stemmer installert"
+
+msgid "No License."
+msgstr "Ingen Lisens."
+
+# Restored for the original Vocalizer Automotive missing-voices behavior.
+msgid "No voices installed."
+msgstr "Ingen stemmer installert"
+
+msgid "Nuance Vocalizer license files"
+msgstr "Nuance Vocalizer lisensfiler"
+
+msgid "Open the vocalizer voices download page."
+msgstr "Åpne vocalizer-stemme nedlastingside."
+
+msgid "Remove License"
+msgstr "Fjern Lisens"
+
+msgid "Remove License?"
+msgstr "Fjern lisens?"
+
+msgid "Remove your license from this NVDA copy"
+msgstr "Fjern lisensen fra denne NVDA kopien"
 
 msgid "Select a language, and then configure the voice to be used:"
 msgstr "Velg et språk, og velg deretter stemmen som skal brukes:"
 
-msgid "Locale Name:"
-msgstr "Språknavn:"
+msgid "Success!"
+msgstr "Vellykket!"
+
+msgid "The license file exists but could not be read."
+msgstr ""
+
+msgid "The license file was copied, but its data could not be read."
+msgstr ""
+
+msgid "Unknown"
+msgstr ""
+
+msgid ""
+"Use your own Vocalizer license file. The selected file will be copied to "
+"your NVDA configuration.\n"
+"\n"
+"The Automotive engine will check the license after NVDA is restarted. Due to "
+"limitations of communication between 64-bit NVDA and the 32-bit host, a "
+"detailed reason for rejecting the license may not be displayed. If the "
+"engine rejects the license, the synthesizer may simply fail to load.\n"
+"\n"
+"Do you want to continue?"
+msgstr ""
+
+msgid "User Identification: "
+msgstr "Brukeridentifikasjon: "
+
+msgid "User Name: "
+msgstr "Brukernavn: "
+
+msgid "Vocalizer Automatic Language Switching Settings"
+msgstr "Vocalizer Automatisk språkbytteinnstillinger"
+
+msgid "Vocalizer Automotive"
+msgstr ""
+
+msgid "Vocalizer Automotive management options"
+msgstr ""
+
+msgid "VocalizerAutomotive"
+msgstr "VocalizerAutomotive"
 
 msgid "Voice Name:"
 msgstr "Stemmenavn:"
 
 # Restored for the original Vocalizer Automotive missing-voices behavior.
-#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:215
 msgid ""
 "You have no Vocalizer voices installed.\n"
 "You need at least one voice installed to use Vocalizer for NVDA.\n"
@@ -142,8 +254,3 @@ msgstr ""
 "Du trenger minimum en Vocalizer-stemme for NVDA.\n"
 "Du kan laste ned alle Vocalizer-stemmene fra produktsidene.\n"
 "Vil du åpne Vocalizer for NVDA-stemmenedlastingssiden nå?"
-
-# Restored for the original Vocalizer Automotive missing-voices behavior.
-#: globalPlugins/vocalizer_automotive_globalPlugin/__init__.py:221
-msgid "No voices installed."
-msgstr "Ingen stemmer installert"

@@ -10,6 +10,7 @@
 from collections import OrderedDict
 import math
 import operator
+import os
 try:
 	import addonHandler
 except ImportError:
@@ -24,11 +25,33 @@ from . import _languages
 from . import _vocalizer
 from ._voiceManager import VoiceManager
 
-try:
-	driverVersion = addonHandler.getCodeAddon().manifest['version']
-except Exception:
+
+def _getDriverVersion():
+	if addonHandler is not None:
+		try:
+			return addonHandler.getCodeAddon().manifest["version"]
+		except Exception:
+			pass
+
 	# The 32-bit synth host imports this package outside the add-on manager.
-	driverVersion = "2.1.6-2025.05.12"
+	manifestPath = os.path.abspath(
+		os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, "manifest.ini")
+	)
+	try:
+		with open(manifestPath, "r", encoding="utf-8-sig") as manifestFile:
+			for line in manifestFile:
+				key, separator, value = line.partition("=")
+				if separator and key.strip().lower() == "version":
+					version = value.strip().strip('"\'')
+					if version:
+						return version
+					break
+	except (OSError, UnicodeError):
+		pass
+	return "unknown"
+
+
+driverVersion = _getDriverVersion()
 synthVersion = "5.5" # It would be great if the synth reported that...
 
 voiceModelNames = {"full_vssq5f22" : "Premium High",
