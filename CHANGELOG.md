@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file.
 
-## [2.2.1] - 2026-08-03
+## [2.2.0] - 2026-08-03
 
 ### Fixed
 
@@ -11,7 +11,7 @@ All notable changes to this project are documented in this file.
 * Fixed audio output device selection on NVDA 2025.1 and later by reading `audio.outputDevice`, with a fallback to the legacy `speech.outputDevice` setting.
 * Hardened cleanup after partial 32-bit host initialization failures, avoiding invalid process-handle polling.
 
-## [2.1.8] - 2026-08-03
+## [2.1.7] final - 2026-08-03
 
 ### Fixed
 
