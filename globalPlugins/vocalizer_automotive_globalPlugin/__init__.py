@@ -27,7 +27,6 @@ BRIDGE_SYNTH_NAME = "vocalizerAutomotive32"
 VOICE_DOWNLOADS_URL_TEMPLATE = (
 	"http://www.vocalizer-nvda.com/downloads_redirect.php?lang={lang}"
 )
-DRIVER_VERSION_FALLBACK = "2.1.7-2026.07.13"
 
 
 def getDefaultLicensePath():
@@ -59,12 +58,11 @@ def getLicenseInfo():
 
 def _getDriverVersion():
 	try:
-		for addon in addonHandler.getRunningAddons():
-			if getattr(addon, "name", "") == "vocalizer_automotive_driver":
-				return addon.manifest.get("version", DRIVER_VERSION_FALLBACK)
+		addon = addonHandler.getCodeAddon()
+		return addon.manifest["version"]
 	except Exception:
 		log.debugWarning("Unable to read Automotive driver version.", exc_info=True)
-	return DRIVER_VERSION_FALLBACK
+		return _("Unknown")
 
 
 def _getLicenseSummary():
