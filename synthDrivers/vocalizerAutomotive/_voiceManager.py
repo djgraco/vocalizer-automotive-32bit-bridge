@@ -139,8 +139,13 @@ class VoiceManager(object):
 		return None
 
 	def _getConfiguredVoiceNameForLanguage(self, language):
-		if language in _config.vocalizerConfig['autoLanguageSwitching']:
-			return _config.vocalizerConfig['autoLanguageSwitching'][language]['voice']
+		autoSwitching = _config.vocalizerConfig['autoLanguageSwitching']
+		if language in autoSwitching:
+			return autoSwitching[language]['voice']
+		if '_' in language:
+			baseLanguage = language.split('_', 1)[0]
+			if baseLanguage in autoSwitching:
+				return autoSwitching[baseLanguage]['voice']
 		return None
 
 	def onVoiceLoad(self, voiceName, instance):

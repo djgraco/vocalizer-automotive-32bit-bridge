@@ -20,6 +20,8 @@ All notable changes to this project are documented in this file.
 * Fixed cleanup of the RPyC pipe streams used by brokered audio, eliminating repeated `Bad file descriptor` errors.
 * Fixed audio output device selection on NVDA 2025.1 and later by reading `audio.outputDevice`, with a fallback to the legacy `speech.outputDevice` setting.
 * Hardened cleanup after partial 32-bit host initialization failures, avoiding invalid process-handle polling.
+* Restored base-language voice groups while retaining the available regional language choices.
+* Fixed automatic language switching for regional codes such as `en_US` by falling back to the configured base-language voice when no exact regional voice is configured.
 
 ## [2.1.7] - 2026-08-03
 
@@ -36,3 +38,5 @@ All notable changes to this project are documented in this file.
 ### Fixed
 
 * Fixed audio output device selection on NVDA 2025.1 and later by reading `audio.outputDevice`, with a fallback to the legacy `speech.outputDevice` setting.
+* Restored base-language voice groups while retaining the available regional language choices.
+* Fixed automatic language switching for regional codes such as `en_US` by falling back to the configured base-language voice when no exact regional voice is configured.
