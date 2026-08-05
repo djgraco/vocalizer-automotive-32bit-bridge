@@ -86,6 +86,23 @@ def _readVoiceHeader(path):
 	return None
 
 
+def _addBaseLanguageGroups(localeToVoices):
+	"""Add configurable base-language entries for groups with multiple voices."""
+	groupedVoices = {}
+	for locale, voiceNames in localeToVoices.items():
+		baseLanguage = locale.split("_", 1)[0]
+		groupedVoices.setdefault(baseLanguage, set()).update(voiceNames)
+
+	result = {locale: set(voiceNames) for locale, voiceNames in localeToVoices.items()}
+	for baseLanguage, voiceNames in groupedVoices.items():
+		if baseLanguage in result or len(voiceNames) > 1:
+			result[baseLanguage] = voiceNames
+	return OrderedDict(
+		(locale, sorted(voiceNames))
+		for locale, voiceNames in sorted(result.items())
+	)
+
+
 def getInstalledVoiceLocaleMap():
 	voices = {}
 	for addonPath in _getVoiceAddonPaths():
@@ -95,7 +112,7 @@ def getInstalledVoiceLocaleMap():
 				continue
 			locale, voice = result
 			voices.setdefault(locale, set()).add(voice)
-	return OrderedDict((locale, sorted(names)) for locale, names in sorted(voices.items()))
+	return _addBaseLanguageGroups(voices)
 
 
 class VocalizerLanguageSettingsDialog(gui.SettingsDialog):
