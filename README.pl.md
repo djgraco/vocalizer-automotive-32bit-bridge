@@ -20,24 +20,24 @@ Ten fork jest utrzymywany niezależnie. Zgłaszaj problemy w tym repozytorium i 
 
 ## Zalecane wersje do pobrania
 
-### Vocalizer Automotive 2.1.7 — Classic bridge
+### Vocalizer Automotive 2.1.8 — Classic bridge
 
-[Pobierz Vocalizer Automotive 2.1.7](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.7/vocalizer_automotive_driver-2.1.7.nvda-addon)
+[Pobierz Vocalizer Automotive 2.1.8](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
 
 Jest to wariant zalecany do normalnego, codziennego użycia. W 64-bitowym NVDA
 używa klasycznego mostu zgodności i obsługuje NVDA 2026.1 oraz nowsze wersje.
 W 32-bitowym NVDA korzysta z natywnego, bezpośredniego sterownika Automotive.
 
-### Vocalizer Automotive 2.2.0-2026-08-03 — Brokered audio
+### Vocalizer Automotive 2.2.0-2026-08-25 — Brokered audio
 
-[Pobierz eksperymentalny wariant brokered audio](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-03/vocalizer_automotive_driver-2.2.0-2026-08-03.nvda-addon)
+[Pobierz eksperymentalny wariant brokered audio](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
 
 Ten eksperymentalny wariant jest przeznaczony dla 64-bitowego NVDA 2026.2 i
 nowszych wersji. Przekazuje dźwięk z 32-bitowego hosta przez główny proces
 audio NVDA, co na obsługiwanej ścieżce umożliwia między innymi natywne
 przyciszanie dźwięku NVDA oraz zgodność z Sonic Pitch. Występują w nim znane
 problemy z anulowaniem i kolejkowaniem mowy, dlatego do zwykłego użycia nadal
-zalecana jest wersja 2.1.7.
+zalecana jest wersja 2.1.8.
 
 ### Vocalizer Automotive 2.1.6 — poprawka zgodności dla NVDA 2025
 
@@ -86,10 +86,10 @@ przyciszania dźwięku NVDA i zgodności z Sonic Pitch w obsługiwanych
 
 ## Dostępne warianty
 
-- **Classic bridge — 2.1.7:** zalecana wersja ogólnego przeznaczenia. W
+- **Classic bridge — 2.1.8:** zalecana wersja ogólnego przeznaczenia. W
   64-bitowym NVDA 2026.1 i nowszym ładuje 32-bitowy sterownik przez klasyczny
   most zgodności NVDA, a w 32-bitowym NVDA ładuje go bezpośrednio.
-- **Brokered audio — 2.2.0-2026-08-03:** eksperymentalna wersja dla
+- **Brokered audio — 2.2.0-2026-08-25:** eksperymentalna wersja dla
   64-bitowego NVDA 2026.2 i nowszego. Przekazuje dźwięk mowy z 32-bitowego
   hosta przez główny proces audio NVDA. W 32-bitowym NVDA korzysta z natywnej
   ścieżki bezpośredniej.
