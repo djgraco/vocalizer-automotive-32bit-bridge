@@ -20,23 +20,23 @@ This fork is maintained independently. Report issues through this repository and
 
 ## Recommended downloads
 
-### Vocalizer Automotive 2.1.7 — Classic bridge
+### Vocalizer Automotive 2.1.8 — Classic bridge
 
-[Download Vocalizer Automotive 2.1.7](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.7/vocalizer_automotive_driver-2.1.7.nvda-addon)
+[Download Vocalizer Automotive 2.1.8](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
 
 This is the recommended variant for normal daily use. On 64-bit NVDA it uses
 the classic compatibility bridge and supports NVDA 2026.1 and newer. On
 32-bit NVDA it uses the native direct Automotive driver.
 
-### Vocalizer Automotive 2.2.0-2026-08-03 — Brokered audio
+### Vocalizer Automotive 2.2.0-2026-08-25 — Brokered audio
 
-[Download the experimental brokered-audio variant](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-03/vocalizer_automotive_driver-2.2.0-2026-08-03.nvda-addon)
+[Download the experimental brokered-audio variant](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
 
 This experimental variant is intended for 64-bit NVDA 2026.2 and newer. It
 routes audio from the 32-bit host through the main NVDA audio process, which
 enables features such as native NVDA audio ducking and Sonic Pitch
 compatibility on the supported path. It has known speech cancellation and
-queueing issues, so version 2.1.7 remains recommended for regular use.
+queueing issues, so version 2.1.8 remains recommended for regular use.
 
 ### Vocalizer Automotive 2.1.6 — NVDA 2025 compatibility fix
 
@@ -85,10 +85,10 @@ on the brokered 64-bit path. The standard variant does not use this path.
 
 ## Available Variants
 
-- **Classic bridge — 2.1.7:** the recommended general-purpose version. It
+- **Classic bridge — 2.1.8:** the recommended general-purpose version. It
   loads the 32-bit driver through NVDA's classic compatibility bridge on
   64-bit NVDA 2026.1 and newer, and directly on 32-bit NVDA.
-- **Brokered audio — 2.2.0-2026-08-03:** an experimental version for 64-bit
+- **Brokered audio — 2.2.0-2026-08-25:** an experimental version for 64-bit
   NVDA 2026.2 and newer. It sends speech audio from the 32-bit host through
   the main NVDA audio process. On 32-bit NVDA it uses the native direct path.
 - **Legacy NVDA 2025 compatibility fix — 2.1.6-nvda2025:** a native 32-bit

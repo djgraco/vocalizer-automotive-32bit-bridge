@@ -22,23 +22,23 @@ Pôvodný projekt Vocalizer Automotive 5.5 sa už oficiálne nevyvíja ani nepod
 
 ## Odporúčané súbory na stiahnutie
 
-### Vocalizer Automotive 2.1.7 — Classic bridge
+### Vocalizer Automotive 2.1.8 — Classic bridge
 
-[Stiahnuť Vocalizer Automotive 2.1.7](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.7/vocalizer_automotive_driver-2.1.7.nvda-addon)
+[Stiahnuť Vocalizer Automotive 2.1.8](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
 
 Toto je odporúčaný variant na bežné každodenné používanie. V 64-bitovom NVDA
 používa klasický most kompatibility a podporuje NVDA 2026.1 a novšie. V
 32-bitovom NVDA používa natívny priamy ovládač Automotive.
 
-### Vocalizer Automotive 2.2.0-2026-08-03 — Brokered audio
+### Vocalizer Automotive 2.2.0-2026-08-25 — Brokered audio
 
-[Stiahnuť experimentálny variant brokered audio](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-03/vocalizer_automotive_driver-2.2.0-2026-08-03.nvda-addon)
+[Stiahnuť experimentálny variant brokered audio](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
 
 Tento experimentálny variant je určený pre 64-bitové NVDA 2026.2 a novšie.
 Odovzdáva zvuk z 32-bitového hostiteľa cez hlavný zvukový proces NVDA, čo na
 podporovanej ceste umožňuje napríklad natívne stíšenie zvuku NVDA a
 kompatibilitu so Sonic Pitch. Obsahuje známe problémy so zrušením a radením
-reči do frontu, preto sa na bežné používanie naďalej odporúča verzia 2.1.7.
+reči do frontu, preto sa na bežné používanie naďalej odporúča verzia 2.1.8.
 
 ### Vocalizer Automotive 2.1.6 — oprava kompatibility pre NVDA 2025
 
@@ -88,10 +88,10 @@ Na 64-bitovej brokered ceste spravuje a ukladá vybraný režim NVDA.
 
 ## Dostupné varianty
 
-- **Classic bridge — 2.1.7:** odporúčaná verzia na všeobecné používanie. V
+- **Classic bridge — 2.1.8:** odporúčaná verzia na všeobecné používanie. V
   64-bitovom NVDA 2026.1 a novšom načítava 32-bitový ovládač cez klasický
   most kompatibility NVDA a v 32-bitovom NVDA ho načítava priamo.
-- **Brokered audio — 2.2.0-2026-08-03:** experimentálna verzia pre 64-bitové
+- **Brokered audio — 2.2.0-2026-08-25:** experimentálna verzia pre 64-bitové
   NVDA 2026.2 a novšie. Odovzdáva zvuk reči z 32-bitového hostiteľa cez
   hlavný zvukový proces NVDA. V 32-bitovom NVDA používa natívnu priamu cestu.
 - **Legacy NVDA 2025 compatibility fix — 2.1.6-nvda2025:** natívna 32-bitová
