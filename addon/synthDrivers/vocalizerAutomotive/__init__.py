@@ -13,6 +13,7 @@ from collections import OrderedDict
 import math
 import operator
 import os
+import globalVars
 try:
 	import addonHandler
 except ImportError:
@@ -23,6 +24,28 @@ import languageHandler
 from logHandler import log
 import speech
 import synthDriverHandler
+
+
+# The 32-bit synth host initializes configPath as "." and does not synchronize
+# it from the parent NVDA process. Derive it from the installed add-on location
+# before importing modules that use it to find voices, configuration and license.
+def _setConfigPathFromDriverLocation():
+	appArgs = getattr(globalVars, "appArgs", None)
+	if appArgs is None or os.path.isabs(getattr(appArgs, "configPath", "")):
+		return
+	appArgs.configPath = os.path.abspath(
+		os.path.join(
+			os.path.dirname(__file__),
+			os.pardir,
+			os.pardir,
+			os.pardir,
+			os.pardir,
+		)
+	)
+
+
+_setConfigPathFromDriverLocation()
+
 from . import _languages
 from . import _vocalizer
 from ._voiceManager import VoiceManager

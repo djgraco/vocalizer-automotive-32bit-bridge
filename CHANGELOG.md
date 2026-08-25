@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file.
 
-## [2.2.0] - 2026-08-03
+## [2.2.0] - 2026-08-25
 
 ### Changed
 
@@ -23,6 +23,13 @@ All notable changes to this project are documented in this file.
 * Hardened cleanup after partial 32-bit host initialization failures, avoiding invalid process-handle polling.
 * Restored base-language voice groups while retaining the available regional language choices.
 * Fixed automatic language switching for regional codes such as `en_US` by falling back to the configured base-language voice when no exact regional voice is configured.
+* Fixed voice and license discovery on Windows secure desktops by deriving the active NVDA configuration directory from the installed add-on location before loading the 32-bit driver.
+
+## [2.1.8] - 2026-08-25
+
+### Fixed
+
+* Fixed voice and license discovery on Windows secure desktops by deriving the active NVDA configuration directory from the installed add-on location before loading the 32-bit driver.
 
 ## [2.1.7] - 2026-08-03
 
