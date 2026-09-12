@@ -22,7 +22,7 @@ Ten fork jest utrzymywany niezależnie. Zgłaszaj problemy w tym repozytorium i 
 
 ### Vocalizer Automotive 2.1.8 — Classic bridge
 
-[Pobierz Vocalizer Automotive 2.1.8](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
+[Pobierz Vocalizer Automotive 2.1.8](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
 
 Jest to wariant zalecany do normalnego, codziennego użycia. W 64-bitowym NVDA
 używa klasycznego mostu zgodności i obsługuje NVDA 2026.1 oraz nowsze wersje.
@@ -30,7 +30,7 @@ W 32-bitowym NVDA korzysta z natywnego, bezpośredniego sterownika Automotive.
 
 ### Vocalizer Automotive 2.2.0-2026-08-25 — Brokered audio
 
-[Pobierz eksperymentalny wariant brokered audio](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
+[Pobierz eksperymentalny wariant brokered audio](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
 
 Ten eksperymentalny wariant jest przeznaczony dla 64-bitowego NVDA 2026.2 i
 nowszych wersji. Przekazuje dźwięk z 32-bitowego hosta przez główny proces
@@ -41,7 +41,7 @@ zalecana jest wersja 2.1.8.
 
 ### Vocalizer Automotive 2.1.6 — poprawka zgodności dla NVDA 2025
 
-[Pobierz wersję zgodnościową dla NVDA 2025](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.6-nvda2025/vocalizer_automotive_driver-2.1.6-2025fix.nvda-addon)
+[Pobierz wersję zgodnościową dla NVDA 2025](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.1.6-nvda2025/vocalizer_automotive_driver-2.1.6-2025fix.nvda-addon)
 
 Jest to specjalna poprawka zgodności dla natywnego 32-bitowego NVDA 2025.x,
 oparta na Vocalizer Automotive 2.1.6. **Nie** jest to oryginalne wydanie
