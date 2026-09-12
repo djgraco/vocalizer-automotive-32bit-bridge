@@ -22,7 +22,7 @@ Tento fork je udržiavaný nezávisle. Problémy hláste v tomto úložisku a ž
 
 ### Vocalizer Automotive 2.1.8 — Classic bridge
 
-[Stiahnuť Vocalizer Automotive 2.1.8](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
+[Stiahnuť Vocalizer Automotive 2.1.8](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
 
 Toto je odporúčaný variant na bežné každodenné používanie. V 64-bitovom NVDA
 používa klasický most kompatibility a podporuje NVDA 2026.1 a novšie. V
@@ -30,7 +30,7 @@ používa klasický most kompatibility a podporuje NVDA 2026.1 a novšie. V
 
 ### Vocalizer Automotive 2.2.0-2026-08-25 — Brokered audio
 
-[Stiahnuť experimentálny variant brokered audio](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
+[Stiahnuť experimentálny variant brokered audio](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
 
 Tento experimentálny variant je určený pre 64-bitové NVDA 2026.2 a novšie.
 Odovzdáva zvuk z 32-bitového hostiteľa cez hlavný zvukový proces NVDA, čo na
@@ -40,7 +40,7 @@ reči do frontu, preto sa na bežné používanie naďalej odporúča verzia 2.1
 
 ### Vocalizer Automotive 2.1.6 — oprava kompatibility pre NVDA 2025
 
-[Stiahnuť verziu kompatibility pre NVDA 2025](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.6-nvda2025/vocalizer_automotive_driver-2.1.6-2025fix.nvda-addon)
+[Stiahnuť verziu kompatibility pre NVDA 2025](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.1.6-nvda2025/vocalizer_automotive_driver-2.1.6-2025fix.nvda-addon)
 
 Ide o osobitnú opravu kompatibility pre natívne 32-bitové NVDA 2025.x,
 založenú na Vocalizer Automotive 2.1.6. **Nie je** to pôvodné vydanie
