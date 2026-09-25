@@ -16,6 +16,7 @@ class SynthDriver(SynthDriverProxy32):
 
 	@classmethod
 	def check(cls):
-		if not os.path.isdir(cls.synthDriver32Path):
+		driverPath = os.path.join(cls.synthDriver32Path, cls.synthDriver32Name)
+		if not os.path.isdir(driverPath):
 			return False
 		return super().check()
