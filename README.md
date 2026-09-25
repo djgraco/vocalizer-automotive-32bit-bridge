@@ -22,7 +22,7 @@ This fork is maintained independently. Report issues through this repository and
 
 ### Vocalizer Automotive 2.1.8 — Classic bridge
 
-[Download Vocalizer Automotive 2.1.8](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
+[Download Vocalizer Automotive 2.1.8](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.1.8/vocalizer_automotive_driver-2.1.8.nvda-addon)
 
 This is the recommended variant for normal daily use. On 64-bit NVDA it uses
 the classic compatibility bridge and supports NVDA 2026.1 and newer. On
@@ -30,7 +30,7 @@ the classic compatibility bridge and supports NVDA 2026.1 and newer. On
 
 ### Vocalizer Automotive 2.2.0-2026-08-25 — Brokered audio
 
-[Download the experimental brokered-audio variant](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
+[Download the experimental brokered-audio variant](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.2.0-2026-08-25/vocalizer_automotive_driver-2.2.0-2026-08-25.nvda-addon)
 
 This experimental variant is intended for 64-bit NVDA 2026.2 and newer. It
 routes audio from the 32-bit host through the main NVDA audio process, which
@@ -40,7 +40,7 @@ queueing issues, so version 2.1.8 remains recommended for regular use.
 
 ### Vocalizer Automotive 2.1.6 — NVDA 2025 compatibility fix
 
-[Download the NVDA 2025 compatibility build](https://github.com/kazek5p-git/vocalizer-automotive-32bit-bridge/releases/download/v2.1.6-nvda2025/vocalizer_automotive_driver-2.1.6-2025fix.nvda-addon)
+[Download the NVDA 2025 compatibility build](https://github.com/djgraco/vocalizer-automotive-32bit-bridge/releases/download/v2.1.6-nvda2025/vocalizer_automotive_driver-2.1.6-2025fix.nvda-addon)
 
 This is a special compatibility fix for native 32-bit NVDA 2025.x, based on
 Vocalizer Automotive 2.1.6. It is **not** the original Vocalizer Automotive
