@@ -111,7 +111,7 @@ The add-on interface includes the original translations for these locales:
 NVDA uses the language selected in its general settings.
 
 The reusable translation template is available at
-`addon/locale/vocalizer_automotive_driver.pot`.
+`vocalizer_automotive_driver.pot`.
 
 ## Runtime Check
 
