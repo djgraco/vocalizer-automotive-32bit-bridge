@@ -131,7 +131,7 @@ Balík sa uloží do priečinka `dist` a bude obsahovať runtime súbory uložen
 v úložisku. Skript vždy vynechá `vocalizer_license.ini`.
 
 Univerzálna šablóna prekladov sa nachádza v súbore
-`addon/locale/vocalizer_automotive_driver.pot`.
+`vocalizer_automotive_driver.pot`.
 
 Rozhranie doplnku obsahuje lokalizácie: `an`, `ar`, `da`, `de`, `el`, `es`,
 `fi`, `fr`, `gl`, `hr`, `hu`, `it`, `ja`, `ko`, `nb_NO`, `ne`, `nl`, `pl`,

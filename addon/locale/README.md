@@ -1,8 +1,8 @@
 # Translation Workflow
 
-The file `vocalizer_automotive_driver.pot` is the neutral translation
-template for the add-on interface. It contains the current English source
-messages and no translations.
+The file `vocalizer_automotive_driver.pot` in the repository root
+is the neutral translation template for the add-on interface.
+It contains the current English source messages and no translations.
 
 To add a language:
 

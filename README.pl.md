@@ -134,7 +134,7 @@ Pakiet zostanie zapisany w katalogu `dist` i będzie zawierał pliki runtime
 przechowywane w repozytorium. Skrypt zawsze pomija `vocalizer_license.ini`.
 
 Uniwersalny szablon tłumaczeń znajduje się w pliku
-`addon/locale/vocalizer_automotive_driver.pot`.
+`vocalizer_automotive_driver.pot`.
 
 Interfejs dodatku zawiera lokalizacje: `an`, `ar`, `da`, `de`, `el`, `es`, `fi`,
 `fr`, `gl`, `hr`, `hu`, `it`, `ja`, `ko`, `nb_NO`, `ne`, `nl`, `pl`, `pt_BR`,
