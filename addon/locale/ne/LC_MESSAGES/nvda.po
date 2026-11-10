@@ -423,3 +423,15 @@ msgstr "Nuance Vocalizer चालक ५.५ ।"
 #: buildVars.py:26
 msgid "Nuance Vocalizer 5.5 speech synthesizer driver and interface for NVDA."
 msgstr "नेत्रवाणीका लागि Nuance Vocalizer 5.5 वाचन संश्लेषक चालक र अन्तराकृति ।"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Vocalizer Automotive 5.5 ड्राइभर"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Nuance Vocalizer Automotive 5.5 का लागि ड्राइभर र इन्टरफेस।\n"
+"यसलाई प्रयोग गर्न तपाईंसँग वैध इजाजतपत्र हुनुपर्छ र कम्तीमा एउटा आवाज https://vocalizer-nvda.com/old/en/downloads.htm बाट डाउनलोड गरी स्थापना गर्नुपर्छ।"

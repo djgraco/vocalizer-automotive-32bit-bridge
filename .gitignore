@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+dist/
+*.nvda-addon
+vocalizer_license.ini
+
+# Generated build outputs.
+.venv/
+.sconsign.dblite
+addon/manifest.ini
+addon/locale/*/manifest.ini
+addon/locale/*/LC_MESSAGES/*.mo
+addon/doc/*/*.html
+addon/doc/style.css
+addon/NOTICE.txt
+vocalizer_automotive_driver-merge.pot
+addon/synthDrivers/vocalizerAutomotive/common/speech/components/

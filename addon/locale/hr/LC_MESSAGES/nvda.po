@@ -455,3 +455,15 @@ msgstr "Nuance Vocalizer 5.5 pogonski softver"
 msgid "Nuance Vocalizer 5.5 speech synthesizer driver and interface for NVDA."
 msgstr ""
 "Pogonski softver i NVDA sučelje za Nuance Vocalizer 5.5 sintetizator govora."
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Upravljački program Vocalizer Automotive 5.5"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Upravljački program i sučelje za Nuance Vocalizer Automotive 5.5.\n"
+"Za korištenje morate imati valjanu licencu i instalirati barem jedan glas koji se može preuzeti s adrese https://vocalizer-nvda.com/old/en/downloads.htm"

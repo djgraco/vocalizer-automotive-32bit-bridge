@@ -454,3 +454,15 @@ msgstr "Dráiver do Nuance Vocalizer 5.5"
 msgid "Nuance Vocalizer 5.5 speech synthesizer driver and interface for NVDA."
 msgstr ""
 "Dráiver e interface do sintetizador de fala Nuance Vocalizer 5.5 para NVDA."
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Driver do Vocalizer Automotive 5.5"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Driver e interface para o Nuance Vocalizer Automotive 5.5.\n"
+"Para usá-lo, você precisa ter uma licença válida e instalar pelo menos uma voz, disponível para download em https://vocalizer-nvda.com/old/en/downloads.htm"

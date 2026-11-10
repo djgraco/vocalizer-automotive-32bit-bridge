@@ -486,3 +486,15 @@ msgstr "Pilote et interface du synthetiseur Nuance Vocalizer 5.5 pour NVDA."
 #~ msgstr ""
 #~ "Entrez les données de votre licence Vocalizer dans le fichier qui sera "
 #~ "ouvert."
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Pilote Vocalizer Automotive 5.5"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Pilote et interface pour Nuance Vocalizer Automotive 5.5.\n"
+"Pour l’utiliser, vous devez disposer d’une licence valide et installer au moins une voix, téléchargeable depuis https://vocalizer-nvda.com/old/en/downloads.htm"

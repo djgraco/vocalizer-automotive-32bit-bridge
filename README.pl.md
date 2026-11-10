@@ -60,11 +60,20 @@ ani wspierany przez Tiflotecnię.
 
 ## Pozostałe gałęzie
 
-- `main` – Vocalizer Automotive 2.1.7 Classic bridge
+- `main` – Vocalizer Automotive 2.1.8 Classic bridge
 - `brokered-audio` – eksperymentalna wersja brokered audio dla współczesnego
   64-bitowego NVDA
 - `legacy-2.1.6-2025` – natywna 32-bitowa wersja 2.1.6 dostosowana do
   NVDA 2025.x
+
+## Budowanie
+
+Budowanie jest oparte na NVDA Add-on Template. W katalogu repozytorium
+wykonaj `uv sync --locked`, a następnie `uv run --locked scons`. Pomoc HTML,
+pliki MO i manifesty powstają automatycznie. Pakiet z numerem wersji trafia
+do `dist`. [Instrukcja budowania](docs/building.md) opisuje wymagane narzędzia,
+kontrole i przygotowanie plików silnika dla poszczególnych gałęzi. Dotychczasowe
+polecenie `tools/Build-PublicAddon.ps1` uruchamia teraz ten sam mechanizm.
 
 ## Licencja
 

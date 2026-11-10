@@ -452,3 +452,15 @@ msgstr "Nuance Vocalizer 5.5 driver"
 msgid "Nuance Vocalizer 5.5 speech synthesizer driver and interface for NVDA."
 msgstr ""
 "Nuance Vocalizer 5.5 beszédszintetizátor driver és felület az NVDA-hoz."
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Vocalizer Automotive 5.5 illesztőprogram"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Illesztőprogram és kezelőfelület a Nuance Vocalizer Automotive 5.5-höz.\n"
+"A használatához érvényes licenccel kell rendelkeznie, és telepítenie kell legalább egy hangot, amely innen tölthető le: https://vocalizer-nvda.com/old/en/downloads.htm"

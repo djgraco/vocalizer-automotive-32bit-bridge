@@ -443,3 +443,15 @@ msgstr "تعريف Nuance Vocalizer 5.5"
 #: buildVars.py:26
 msgid "Nuance Vocalizer 5.5 speech synthesizer driver and interface for NVDA."
 msgstr "تعريف آلة النطق Nuance Vocalizer 5.5 وواجهتها مع NVDA"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "برنامج تشغيل Vocalizer Automotive 5.5"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"برنامج التشغيل والواجهة لـ Nuance Vocalizer Automotive 5.5.\n"
+"لاستخدامه، يجب أن يكون لديك ترخيص صالح وأن تثبّت صوتًا واحدًا على الأقل، ويمكن تنزيل الأصوات من https://vocalizer-nvda.com/old/en/downloads.htm"

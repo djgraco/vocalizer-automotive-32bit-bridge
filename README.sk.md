@@ -60,11 +60,20 @@ ani nepodporuje.
 
 ## Ostatné vetvy
 
-- `main` – Vocalizer Automotive 2.1.7 Classic bridge
+- `main` – Vocalizer Automotive 2.1.8 Classic bridge
 - `brokered-audio` – experimentálna verzia brokered audio pre súčasné
   64-bitové NVDA
 - `legacy-2.1.6-2025` – natívna 32-bitová verzia 2.1.6 upravená pre
   NVDA 2025.x
+
+## Zostavenie
+
+Zostavenie je založené na NVDA Add-on Template. V koreňovom adresári
+repozitára spustite `uv sync --locked` a potom `uv run --locked scons`.
+Pomoc HTML, súbory MO a manifesty sa vytvoria automaticky. Balík s číslom
+verzie sa uloží do `dist`. [Návod na zostavenie](docs/building.md) opisuje
+nástroje, kontroly a prípravu súborov jadra pre jednotlivé vetvy. Pôvodný
+príkaz `tools/Build-PublicAddon.ps1` teraz spúšťa tento istý postup.
 
 ## Licencia
 

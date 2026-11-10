@@ -58,9 +58,18 @@ or supported by Tiflotecnia.
 
 ## Other branches
 
-- `main` – Vocalizer Automotive 2.1.7 Classic bridge
+- `main` – Vocalizer Automotive 2.1.8 Classic bridge
 - `brokered-audio` – experimental brokered-audio version for modern 64-bit NVDA
 - `legacy-2.1.6-2025` – native 32-bit 2.1.6 compatibility version for NVDA 2025.x
+
+## Building
+
+The build uses NVDA Add-on Template. From the repository root, run
+`uv sync --locked`, then `uv run --locked scons`. HTML help, MO files and
+manifests are generated automatically. The versioned package is written to
+`dist`. See [building instructions](docs/building.md) for prerequisites,
+validation and branch-specific runtime preparation. The existing
+`tools/Build-PublicAddon.ps1` command delegates to this build.
 
 ## License
 

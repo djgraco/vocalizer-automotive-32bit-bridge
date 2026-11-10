@@ -481,3 +481,15 @@ msgstr ""
 #~ "(tiflotecnia@tiflotecnia.com).\n"
 #~ "\n"
 #~ "Θέλετε να συνεχίσετε;"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Πρόγραμμα οδήγησης Vocalizer Automotive 5.5"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Πρόγραμμα οδήγησης και διεπαφή για το Nuance Vocalizer Automotive 5.5.\n"
+"Για να το χρησιμοποιήσετε, πρέπει να διαθέτετε έγκυρη άδεια χρήσης και να εγκαταστήσετε τουλάχιστον μία φωνή, την οποία μπορείτε να κατεβάσετε από τη διεύθυνση https://vocalizer-nvda.com/old/en/downloads.htm"
