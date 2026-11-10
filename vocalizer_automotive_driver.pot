@@ -1,21 +1,39 @@
-# Vocalizer Automotive 32-bit Bridge for NVDA translation template.
-# Copyright (C) 2026 Vocalizer Automotive 32-bit Bridge contributors
-# This file is distributed under the same license as the Vocalizer Automotive
-# 32-bit Bridge for NVDA project.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'vocalizer_automotive_driver' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Vocalizer Automotive 32-bit Bridge\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-04 20:21+0200\n"
+"Project-Id-Version: 'vocalizer_automotive_driver' '2.1.8'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-11-10 17:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\dialogs.py:121
+msgid "Vocalizer Automatic Language Switching Settings"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\dialogs.py:135
+msgid "Select a language, and then configure the voice to be used:"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\dialogs.py:142
+msgid "Locale Name:"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\dialogs.py:149
+msgid "Voice Name:"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:36
 #, python-brace-format
 msgid ""
 "\n"
@@ -64,111 +82,7 @@ msgid ""
 "{contributors}\n"
 msgstr ""
 
-msgid "About Nuance Vocalizer for NVDA"
-msgstr ""
-
-msgid ""
-"Are you sure you want to remove your license?\n"
-"This can not be reverted."
-msgstr ""
-
-msgid "Automatic &Language Switching Settings"
-msgstr ""
-
-msgid "Choose license file"
-msgstr ""
-
-msgid "Configure which voice is to be used for each language."
-msgstr ""
-
-msgid "Distributor: "
-msgstr ""
-
-msgid "Download More Voices"
-msgstr ""
-
-msgid "Enter License"
-msgstr ""
-
-msgid "Enter your license data for this computer."
-msgstr ""
-
-msgid "Entering License Data:"
-msgstr ""
-
-msgid "Error"
-msgstr ""
-
-#, python-brace-format
-msgid "Error copying license data: {error}"
-msgstr ""
-
-#, python-brace-format
-msgid "Error removing license: {error}"
-msgstr ""
-
-msgid "License Number: "
-msgstr ""
-
-msgid ""
-"License entered successfully!\n"
-"For all changes to take effect NVDA must be restarted.\n"
-"Do you want to restart NVDA now?"
-msgstr ""
-
-msgid "License file found, but detailed information is unavailable."
-msgstr ""
-
-msgid "License removed. Restart NVDA for the change to take effect."
-msgstr ""
-
-msgid ""
-"License validity is checked by the 32-bit Automotive host. Detailed license "
-"errors are not available through the current 64/32-bit bridge."
-msgstr ""
-
-msgid "Locale Name:"
-msgstr ""
-
-msgid "No Automotive voice resources were found."
-msgstr ""
-
-msgid "No License."
-msgstr ""
-
-msgid "No voices installed."
-msgstr ""
-
-msgid "Nuance Vocalizer license files"
-msgstr ""
-
-msgid "Open the vocalizer voices download page."
-msgstr ""
-
-msgid "Remove License"
-msgstr ""
-
-msgid "Remove License?"
-msgstr ""
-
-msgid "Remove your license from this NVDA copy"
-msgstr ""
-
-msgid "Select a language, and then configure the voice to be used:"
-msgstr ""
-
-msgid "Success!"
-msgstr ""
-
-msgid "The license file exists but could not be read."
-msgstr ""
-
-msgid "The license file was copied, but its data could not be read."
-msgstr ""
-
-msgid "Unknown"
-msgstr ""
-
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:75
 msgid ""
 "Use your own Vocalizer license file. The selected file will be copied to "
 "your NVDA configuration.\n"
@@ -181,27 +95,172 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-msgid "User Identification: "
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:119
+msgid "Unknown"
 msgstr ""
 
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:125
+msgid "No License."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:127
+msgid "The license file exists but could not be read."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:139
 msgid "User Name: "
 msgstr ""
 
-msgid "Vocalizer Automatic Language Switching Settings"
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:140
+msgid "User Identification: "
 msgstr ""
 
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:141
+msgid "License Number: "
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:142
+msgid "Distributor: "
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:144
+msgid ""
+"License validity is checked by the 32-bit Automotive host. Detailed license "
+"errors are not available through the current 64/32-bit bridge."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:152
+msgid "License file found, but detailed information is unavailable."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:156
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:224
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:258
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:359
 msgid "Vocalizer Automotive"
 msgstr ""
 
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:187
+msgid "Automatic &Language Switching Settings"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:188
+msgid "Configure which voice is to be used for each language."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:196
+msgid "Remove License"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:197
+msgid "Remove your license from this NVDA copy"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:203
+msgid "Enter License"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:204
+msgid "Enter your license data for this computer."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:210
+msgid "Download More Voices"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:211
+msgid "Open the vocalizer voices download page."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:217
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:393
+msgid "About Nuance Vocalizer for NVDA"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:226
 msgid "Vocalizer Automotive management options"
 msgstr ""
 
-msgid "Voice Name:"
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:257
+msgid "No Automotive voice resources were found."
 msgstr ""
 
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:271
 msgid ""
 "You have no Vocalizer voices installed.\n"
 "You need at least one voice installed to use Vocalizer for NVDA.\n"
 "You can download all Vocalizer voices from the product web page.\n"
 "Would you want to open the vocalizer for NVDA voices download page now?"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:276
+msgid "No voices installed."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:287
+msgid "Entering License Data:"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:297
+msgid "Choose license file"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:298
+msgid "Nuance Vocalizer license files"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:316
+msgid ""
+"License entered successfully!\n"
+"For all changes to take effect NVDA must be restarted.\n"
+"Do you want to restart NVDA now?"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:320
+msgid "Success!"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:330
+msgid "The license file was copied, but its data could not be read."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:331
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:338
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:369
+msgid "Error"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:337
+#, python-brace-format
+msgid "Error copying license data: {error}"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:346
+msgid ""
+"Are you sure you want to remove your license?\n"
+"This can not be reverted."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:349
+msgid "Remove License?"
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:358
+msgid "License removed. Restart NVDA for the change to take effect."
+msgstr ""
+
+#: addon\globalPlugins\vocalizer_automotive_globalPlugin\__init__.py:368
+#, python-brace-format
+msgid "Error removing license: {error}"
+msgstr ""
+
+#: buildVars.py:7
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr ""
+
+#: buildVars.py:8
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice "
+"downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
 msgstr ""

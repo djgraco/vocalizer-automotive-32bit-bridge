@@ -258,3 +258,15 @@ msgstr ""
 "Puetz descargar todas as voces de Vocalizer dende a pachina web d'o "
 "producto.\n"
 "Quiers ubrir a pachina de descarga de voces de Vocalizer ta NVDA agora?"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Controlador Vocalizer Automotive 5.5"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Controlador e interficie ta Nuance Vocalizer Automotive 5.5.\n"
+"Ta fer-lo servir, has de tener una licencia valida e instalar, a lo menos, una voz que se puede descargar dende https://vocalizer-nvda.com/old/en/downloads.htm"

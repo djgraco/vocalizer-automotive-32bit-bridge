@@ -55,9 +55,8 @@ wersji.
 ## Instalacja
 
 1. Wybierz odpowiedni wariant w sekcji **Zalecane wersje do pobrania** i
-   zainstaluj jego plik `.nvda-addon`. Jeżeli korzystasz bezpośrednio z kodu
-   źródłowego, skopiuj zawartość katalogu `addon` — bez samego katalogu
-   `addon` — do katalogu dodatków NVDA.
+   zainstaluj jego plik `.nvda-addon`. Jeśli korzystasz z kodu źródłowego,
+   najpierw zbuduj pakiet zgodnie z [instrukcją budowania](docs/building.md).
 2. Pakiet zawiera już wymagane pliki runtime Automotive.
 3. Zainstaluj osobno własne dodatki z głosami Vocalizer Automotive. Ich
    katalogi zwykle zaczynają się od `vocalizer-voice-`.
@@ -120,22 +119,12 @@ plik licencji. Nie pobiera ani nie dołącza licencji.
 
 ## Budowanie
 
-Aby zbudować kompletny dodatek:
-
-```powershell
-.\tools\Build-PublicAddon.ps1
-```
-
-Pakiet zostanie zapisany w katalogu `dist` i będzie zawierał pliki runtime
-przechowywane w repozytorium. Skrypt zawsze pomija `vocalizer_license.ini`.
-
-Uniwersalny szablon tłumaczeń znajduje się w pliku
-`vocalizer_automotive_driver.pot`.
-
-Interfejs dodatku zawiera lokalizacje: `an`, `ar`, `da`, `de`, `el`, `es`, `fi`,
-`fr`, `gl`, `hr`, `hu`, `it`, `ja`, `ko`, `nb_NO`, `ne`, `nl`, `pl`, `pt_BR`,
-`pt_PT`, `ru`, `sk`, `sl`, `tr` i `zh_CN`. Dokumentacja HTML jest dostępna po
-angielsku, polsku i słowacku.
+Budowanie jest oparte na NVDA Add-on Template. W katalogu repozytorium
+wykonaj `uv sync --locked`, a następnie `uv run --locked scons`. Pomoc HTML,
+pliki MO i manifesty powstają automatycznie. Pakiet z numerem wersji trafia
+do `dist`. [Instrukcja budowania](docs/building.md) opisuje wymagane narzędzia,
+kontrole i przygotowanie plików silnika dla poszczególnych gałęzi. Dotychczasowe
+polecenie `tools/Build-PublicAddon.ps1` uruchamia teraz ten sam mechanizm.
 
 ## Licencja
 

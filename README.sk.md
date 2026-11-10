@@ -54,9 +54,8 @@ verzií.
 ## Inštalácia
 
 1. Vyberte vhodný variant v časti **Odporúčané súbory na stiahnutie** a
-   nainštalujte jeho súbor `.nvda-addon`. Ak používate priamo zdrojový strom,
-   skopírujte obsah priečinka `addon` — nie samotný priečinok `addon` — do
-   priečinka doplnkov NVDA.
+   nainštalujte jeho súbor `.nvda-addon`. Pri použití zdrojového kódu
+   najprv zostavte balík podľa [návodu na zostavenie](docs/building.md).
 2. Balík už obsahuje požadované runtime súbory Automotive.
 3. Samostatne nainštalujte vlastné doplnky s hlasmi Vocalizer Automotive.
    Ich priečinky sa zvyčajne začínajú na `vocalizer-voice-`.
@@ -118,22 +117,12 @@ licenčný súbor. Nesťahuje ani nepridáva licenciu.
 
 ## Zostavenie
 
-Ak chcete vytvoriť kompletný doplnok:
-
-```powershell
-.\tools\Build-PublicAddon.ps1
-```
-
-Balík sa uloží do priečinka `dist` a bude obsahovať runtime súbory uložené
-v úložisku. Skript vždy vynechá `vocalizer_license.ini`.
-
-Univerzálna šablóna prekladov sa nachádza v súbore
-`vocalizer_automotive_driver.pot`.
-
-Rozhranie doplnku obsahuje lokalizácie: `an`, `ar`, `da`, `de`, `el`, `es`,
-`fi`, `fr`, `gl`, `hr`, `hu`, `it`, `ja`, `ko`, `nb_NO`, `ne`, `nl`, `pl`,
-`pt_BR`, `pt_PT`, `ru`, `sk`, `sl`, `tr` a `zh_CN`. HTML dokumentácia je
-dostupná v angličtine, poľštine a slovenčine.
+Zostavenie je založené na NVDA Add-on Template. V koreňovom adresári
+repozitára spustite `uv sync --locked` a potom `uv run --locked scons`.
+Pomoc HTML, súbory MO a manifesty sa vytvoria automaticky. Balík s číslom
+verzie sa uloží do `dist`. [Návod na zostavenie](docs/building.md) opisuje
+nástroje, kontroly a prípravu súborov jadra pre jednotlivé vetvy. Pôvodný
+príkaz `tools/Build-PublicAddon.ps1` teraz spúšťa tento istý postup.
 
 ## Licencia
 

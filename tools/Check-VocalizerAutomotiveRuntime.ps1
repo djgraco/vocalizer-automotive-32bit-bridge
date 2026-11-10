@@ -1,16 +1,15 @@
-$ErrorActionPreference = "Stop"
-
 param(
     [string]$AddonPath = "$env:APPDATA\nvda\addons\vocalizer_automotive_driver",
     [string]$AddonsPath = "$env:APPDATA\nvda\addons"
 )
+
+$ErrorActionPreference = "Stop"
 
 $componentsPath = Join-Path $AddonPath "synthDrivers\vocalizerAutomotive\common\speech\components"
 $requiredFiles = @(
     "lid.dat",
     "vautov5.dll",
     "nuan_platform.dll",
-    "nuan_platform.dllz",
     "synth_med_fxd_bet2f22.dat"
 )
 
