@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Migrates packaging to NVDA Add-on Template with locked build tools, generated HTML/MO/manifests and package validation.
+- Preserves runtime source, native behavior, existing translations, version and NVDA compatibility metadata.
+- Adds branch-specific build guidance and read-only CI artifacts without release publication.
+
 All notable changes to this project are documented in this file.
 
 ## [2.2.0] - 2026-08-25

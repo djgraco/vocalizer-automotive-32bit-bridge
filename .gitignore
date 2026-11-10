@@ -13,3 +13,14 @@ dist/
 # Local NVDA configuration and scratch files.
 nvda.ini
 *.log
+
+# Generated build outputs.
+.venv/
+.sconsign.dblite
+addon/manifest.ini
+addon/locale/*/manifest.ini
+addon/locale/*/LC_MESSAGES/*.mo
+addon/doc/*/*.html
+addon/doc/style.css
+addon/NOTICE.txt
+vocalizer_automotive_driver-merge.pot

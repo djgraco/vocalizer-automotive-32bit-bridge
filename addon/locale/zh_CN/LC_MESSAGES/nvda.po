@@ -255,3 +255,15 @@ msgstr ""
 "您最少要未 NVDA 安装一个语音。\n"
 "您可以从我们的产品页面下载所有的 Vocalizer 语音。.\n"
 "您想打开这个页面吗？"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Vocalizer Automotive 5.5 驱动程序"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Nuance Vocalizer Automotive 5.5 的驱动程序和界面。\n"
+"要使用它，您必须持有有效许可证，并至少安装一个可从 https://vocalizer-nvda.com/old/en/downloads.htm 下载的语音。"

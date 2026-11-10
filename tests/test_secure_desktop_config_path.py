@@ -67,14 +67,15 @@ def _proxy_driver_path(proxyPath):
 
 class SecureDesktopConfigPathTests(unittest.TestCase):
 	def test_relative_host_config_path_is_derived_from_installed_addon(self):
-		sourcePath = Path(
-			r"C:\nvdaSystemConfig\addons\vocalizer_automotive_driver\synthDrivers"
-			r"\vocalizerAutomotive\__init__.py"
+		configRoot = Path(os.path.abspath("nvdaSystemConfig"))
+		sourcePath = (
+			configRoot / "addons" / "vocalizer_automotive_driver"
+			/ "synthDrivers" / "vocalizerAutomotive" / "__init__.py"
 		)
 		appArgs = types.SimpleNamespace(configPath=".")
 		globalVars = types.SimpleNamespace(appArgs=appArgs)
 		_load_config_path_function(globalVars, sourcePath)()
-		self.assertEqual(appArgs.configPath, os.path.abspath(r"C:\nvdaSystemConfig"))
+		self.assertEqual(appArgs.configPath, str(configRoot))
 
 	def test_absolute_config_path_from_nvda_is_preserved(self):
 		configPath = os.path.abspath(r"D:\PortableNVDA")

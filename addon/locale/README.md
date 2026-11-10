@@ -1,34 +1,19 @@
-# Translation Workflow
+# Translation workflow
 
-The file `vocalizer_automotive_driver.pot` in the repository root
-is the neutral translation template for the add-on interface.
-It contains the current English source messages and no translations.
+The root `vocalizer_automotive_driver.pot` is generated from runtime source and
+`buildVars.py` using `uv run --locked scons pot`. Update a PO file from that
+template with Poedit or msgmerge, then build with `uv run --locked scons`.
 
-To add a language:
+PO files live at `addon/locale/<language>/LC_MESSAGES/nvda.po`. The build
+compiles MO files and generates localized manifests from the summary and
+description messages in those same catalogs. Do not edit generated manifests
+or MO files. Existing manifest translations have been migrated without rewording.
 
-1. Create `addon/locale/<language>/manifest.ini`.
-2. Copy the POT file to `addon/locale/<language>/LC_MESSAGES/nvda.po`.
-3. Fill in the PO header and translate every `msgstr`.
-4. Compile the PO file to
-   `addon/locale/<language>/LC_MESSAGES/nvda.mo`.
-5. Add a localized `addon/doc/<language>/readme.html` file.
+The 25 historical locales are retained. Existing untranslated messages in
+unmaintained catalogs continue falling back to English. Polish and Slovak
+coverage is checked for current source messages. Preserve placeholders such
+as `{error}`, `{driverVersion}`, `{licenseInfo}` and menu accelerator markers.
 
-With GNU gettext, the compilation command is:
-
-```text
-msgfmt -o addon/locale/pl/LC_MESSAGES/nvda.mo addon/locale/pl/LC_MESSAGES/nvda.po
-```
-
-Replace `pl` with the target locale. Poedit can also compile the `.po` file
-when saving it.
-
-The language directory must use the locale identifier expected by NVDA, for
-example `pl` for Polish or `sk` for Slovak.
-
-Keep placeholders such as `{error}`, `{driverVersion}` and `{licenseInfo}`
-unchanged in translated messages. Keep the `&` marker in menu labels when
-the translated label should have a keyboard accelerator.
-
-The additional legacy Vocalizer locales were synchronized against the current
-bridge POT file. Messages that did not exist in the original translation use
-the English source text as NVDA's fallback.
+Help sources are Markdown in `addon/doc/<language>/readme.md`; the build
+generates HTML. Match the interface's actual translated labels. Validate the
+package following [building instructions](../../docs/building.md).

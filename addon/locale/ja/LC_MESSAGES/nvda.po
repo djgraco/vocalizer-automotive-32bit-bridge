@@ -256,3 +256,15 @@ msgstr ""
 "NVDA用ボーカライザーを使うためには最低ひとつの音声が必要です。\n"
 "この製品のWebページからボーカライザー用音声をダウンロードできます。\n"
 "ダウンロードのWebページを確認しますか？"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid "Vocalizer Automotive 5.5 Driver"
+msgstr "Vocalizer Automotive 5.5 ドライバー"
+
+#. Add-on manifest metadata, preserved from the existing localized manifest.
+msgid ""
+"Driver and interface for Nuance Vocalizer Automotive 5.5.\n"
+"To use it, you must have a valid license and install, at least, one voice downloadable from https://vocalizer-nvda.com/old/en/downloads.htm"
+msgstr ""
+"Nuance Vocalizer Automotive 5.5用のドライバーおよびインターフェースです。\n"
+"使用するには有効なライセンスが必要で、少なくとも1つの音声を https://vocalizer-nvda.com/old/en/downloads.htm からダウンロードしてインストールする必要があります。"

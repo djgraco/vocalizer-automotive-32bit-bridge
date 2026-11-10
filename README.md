@@ -53,9 +53,8 @@ purposes. Most users should choose one of the three downloads above.
 ## Installation
 
 1. Choose the appropriate variant from **Recommended downloads** and install
-   its `.nvda-addon` file. When using the source checkout instead, copy the
-   contents of `addon`—not the `addon` directory itself—into the NVDA add-ons
-   directory.
+   its `.nvda-addon` file. When using a source checkout, build the package
+   first as described in [Building](docs/building.md).
 2. The package already contains the required Automotive runtime components.
 3. Install your own Vocalizer Automotive voice add-ons separately. Their
    directories normally begin with `vocalizer-voice-`.
@@ -127,14 +126,12 @@ separate license file. It does not download or include a license.
 
 ## Building
 
-To build the complete add-on package:
-
-```powershell
-.\tools\Build-PublicAddon.ps1
-```
-
-The package is written to `dist` and includes the runtime files stored in the
-repository. The build always excludes `vocalizer_license.ini`.
+The build uses NVDA Add-on Template. From the repository root, run
+`uv sync --locked`, then `uv run --locked scons`. HTML help, MO files and
+manifests are generated automatically. The versioned package is written to
+`dist`. See [building instructions](docs/building.md) for prerequisites,
+validation and branch-specific runtime preparation. The existing
+`tools/Build-PublicAddon.ps1` command delegates to this build.
 
 ## License
 
